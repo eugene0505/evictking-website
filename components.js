@@ -220,6 +220,28 @@
     footerContainer.outerHTML = FOOTER_HTML;
   }
 
+  // 3. 自動注入缺失的 HEAD 標籤 (Favicon, FontAwesome, Google Fonts) - 永久解決方案！
+  const head = document.head;
+  if (!document.querySelector('link[rel="icon"]')) {
+    const favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/svg+xml';
+    favicon.href = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B192C'/%3E%3Cpath d='M12 46h40l4-22-14 8-10-16-10 16-14-8 4 22z' fill='%23C5A059'/%3E%3Crect x='12' y='50' width='40' height='4' rx='2' fill='%23DFB76C'/%3E%3C/svg%3E";
+    head.appendChild(favicon);
+  }
+  if (!document.querySelector('link[href*="font-awesome"]')) {
+    const fa = document.createElement('link');
+    fa.rel = 'stylesheet';
+    fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+    head.appendChild(fa);
+  }
+  if (!document.querySelector('link[href*="fonts.googleapis.com"]')) {
+    const fonts = document.createElement('link');
+    fonts.rel = 'stylesheet';
+    fonts.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap';
+    head.appendChild(fonts);
+  }
+
   // 若在 Blog 內頁（沒有首頁專屬的底層 Script），自動綁定手機版漢堡選單與 WhatsApp 連結
   if (!isHomePage) {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
