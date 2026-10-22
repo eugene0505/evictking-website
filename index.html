@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="zh-HK" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ================================================================= -->
+  <!-- 👑 收樓王 EVICTKING - 簡易控制台 (SITE CONFIG)                      -->
+  <!-- 日後只需修改下方雙引號內的資料，儲存後全網站所有按鈕、圖片及價錢自動同步！ -->
+  <!-- ================================================================= -->
+  <script>
+    window.SITE_CONFIG = {
+      // 1. 你的真實 WhatsApp 號碼 (包含區號 852，不需要 + 號或空格)
+      whatsappNumber: "85244962400",
+
+      // 2. 頁面顯示的聯絡電話文字 (用於頁尾顯示)
+      whatsappDisplay: "+852 4496 2400",
+
+      // 3. 首頁大背景圖網址 (已改為讀取同資料夾內的 hero.jpg)
+      heroBackgroundUrl: "./hero.jpg",
+
+      // 4. WhatsApp 分享網址時的預覽縮圖網址 (已同步改為 hero.jpg)
+      ogImageUrl: "./hero.jpg",
+
+      // 5. 第一階段「初步法定開案及送達程序」收費 (HK$)
+      stage1Price: "1,999"
+    };
+  </script>
+  <!-- ================================================================= -->
+  
+  <!-- Basic SEO -->
+  <title>收樓王 EvictKing｜香港業主專業追租・法定收樓及翻新重租顧問</title>
+  <meta name="description" content="租霸欠租拖延？收樓王 EvictKing 為香港業主提供專業追租、法定收樓程序代辦及收樓後翻新放盤一條龍服務。事前嚴格預審防退件，較自辦平均快2至4個月，分段透明收費。" />
+  <meta name="keywords" content="香港收樓, 追租, 土地審裁處, 執達吏, 租霸, 欠租, 收樓令, 棄置令, 村屋收樓, 商舖收樓, 租約冇打釐印收樓, 租客欠租幾耐可以收樓, 收樓王, EvictKing" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Custom SVG Crown Favicon (Browser Tab Icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B192C'/%3E%3Cpath d='M12 46h40l4-22-14 8-10-16-10 16-14-8 4 22z' fill='%23C5A059'/%3E%3Crect x='12' y='50' width='40' height='4' rx='2' fill='%23DFB76C'/%3E%3C/svg%3E" />
+
+  <!-- Open Graph / WhatsApp Link Preview Tags -->
+  <meta property="og:title" content="收樓王 EvictKing｜香港業主專業追租・法定收樓顧問" />
+  <meta property="og:description" content="租霸欠租失蹤？事前嚴格預審文件杜絕退件延誤，較業主自辦平均快 2–4 個月合法破門收樓！特設收樓後翻油、清潔、放盤一條龍服務。" />
+  <meta id="ogImageMeta" property="og:image" content="./hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_HK" />
+
+  <!-- AEO & SEO: JSON-LD Structured Data for Professional Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "收樓王 EvictKing",
+    "alternateName": "EvictKing 香港專業追租收樓顧問",
+    "description": "專為香港業主提供住宅、新界村屋、商舖及工廈之法定追租、收樓程序代辦、文件預審及收樓後翻新重租一條龍顧問服務。",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Hong Kong"
+    },
+    "telephone": "+852-44962400",
+    "priceRange": "HK$1,999起（按階段透明收費）",
+    "url": "https://evictking.com.hk",
+    "knowsAbout": [
+      "香港追租收樓程序",
+      "土地審裁處收回管有權程序",
+      "新界村屋及工商舖收樓",
+      "遺留物品法定棄置令申請",
+      "收樓後單位翻新執漏及重新放盤"
+    ]
+  }
+  </script>
+
+  <!-- AEO & SEO: JSON-LD Structured Data for Complete FAQ & Knowledge Hub -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "租客欠租幾耐可以正式開始收樓程序？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "根據香港法例及一般租約條款，只要租客在租金到期日後拖欠滿 15 天，業主即可依法啟動追租及收回物業管有權程序。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "成個程序預計要幾耐先可以收回單位？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "視乎租客反應及相關部門排期而定：若租客在收到法庭文件或首階段通知後主動交匙遷出，最快約 8–10 週左右可收回；若租客堅持不走，直至安排執法人員完成預告及最終破門換鎖，全程一般約需 3 至 4.5 個月左右。相比之下，業主自辦若因文件瑕疵退件或漏辦手續，往往會拖長至 6 至 9 個月以上。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "租約冇打釐印或漏交稅務文件，仲可唔可以追租收樓？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以。雖然未打釐印的租約不能直接呈堂作為民事證據，但業主可透過合規補打釐印及補交相關法定通知書，再正式向土地審裁處入稟收回物業管有權。建議由專業顧問預先核對文件，避免自行補辦時因地址或日期微瑕再次被退件。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "遇到租霸欠租，業主可唔可以自己斷水斷電或者換鎖收樓？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "絕對不可以。根據香港《業主與租客（綜合）條例》，在未獲法庭批出收樓令及執法人員執行前，業主若自行斷水斷電、換鎖或丟棄租客物品，即屬干犯「非法剝奪租客佔用權」或「侵擾罪」，最高可被判處罰款及監禁，更可能被租霸反索償。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "收樓後屋入面留低大量垃圾或傢俬，可以點處理及翻新？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "業主切勿自行隨意丟棄以免招惹索償風險。我們會在收樓後立即協助向司法機構申請「棄置令」，獲批後即可合法清場；我們更提供全屋翻油、洗冷氣、玻璃修復及重新放盤招租一條龍支援。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics (GA4) Tracking Placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Tracking Placeholder -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#07111E',
+              900: '#0B192C',
+              800: '#132642',
+              700: '#1B365D',
+            },
+            gold: {
+              600: '#A68038',
+              500: '#C5A059',
+              400: '#DFB76C',
+              300: '#F0D59C',
+              100: '#FBF6EB',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans HK"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', '"Noto Sans HK"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Noto Sans HK', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+      -webkit-font-smoothing: antialiased;
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 8px;
+      background: #E2E8F0;
+      border-radius: 999px;
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #C5A059;
+      border: 3px solid #0B192C;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(11, 25, 44, 0.25);
+      transition: transform 0.15s ease;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+      transform: scale(1.12);
+    }
+    .bento-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bento-card:hover {
+      transform: translateY(-4px);
+    }
+    .hero-bg {
+      background-image: 
+        linear-gradient(108deg, rgba(7, 17, 30, 0.94) 0%, rgba(11, 25, 44, 0.88) 52%, rgba(19, 38, 66, 0.78) 100%),
+        url('./hero.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .redacted-bar {
+      background: repeating-linear-gradient(
+        -45deg,
+        #1e293b,
+        #1e293b 6px,
+        #334155 6px,
+        #334155 12px
+      );
+      color: transparent;
+      user-select: none;
+      border-radius: 4px;
+      padding: 1px 6px;
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+  </style>
+</head>
+<body class="pb-20 md:pb-0 selection:bg-gold-500 selection:text-navy-950">
+
+  <!-- Top Trust Notification Bar -->
+  <div class="bg-navy-950 text-slate-300 text-xs py-2.5 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 whitespace-nowrap overflow-x-auto no-scrollbar">
+      <div class="flex items-center gap-2 shrink-0">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-gold-500/20 text-gold-400 border border-gold-500/30">
+          香港業主專線
+        </span>
+        <span class="text-xs sm:text-sm">專辦香港住宅、村屋及工商舖法定追租、收樓及單位翻新還原</span>
+      </div>
+      <div class="hidden lg:flex items-center gap-5 text-xs text-slate-400 shrink-0">
+        <span><i class="fa-solid fa-shield-halved text-gold-400 mr-1.5"></i>100% 遵循香港法例</span>
+        <span><i class="fa-solid fa-bolt text-gold-400 mr-1.5"></i>最快 24 小時內啟動開案</span>
+        <span><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i>全程 WhatsApp 專人跟進（免來電滋擾）</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header (Guaranteed Single-Line Layout) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <a href="#top" class="flex items-center gap-3 group shrink-0 whitespace-nowrap">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-navy-900 via-navy-800 to-navy-950 flex items-center justify-center border border-gold-500/50 shadow-md group-hover:border-gold-400 transition shrink-0">
+          <svg class="w-6 h-6 text-gold-400" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 23L3 10L10.5 15L16 6L21.5 15L29 10L27 23H5Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" fill="rgba(197, 160, 89, 0.18)"/>
+            <path d="M4 27H28" stroke="#DFB76C" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="16" cy="6" r="1.5" fill="#F0D59C"/>
+            <circle cx="3" cy="10" r="1.3" fill="#F0D59C"/>
+            <circle cx="29" cy="10" r="1.3" fill="#F0D59C"/>
+          </svg>
+        </div>
+        <div class="whitespace-nowrap">
+          <div class="flex items-center gap-1.5">
+            <span class="text-xl sm:text-2xl font-black tracking-tight text-navy-900 leading-none">收樓王</span>
+            <span class="text-[11px] font-extrabold tracking-widest uppercase px-1.5 py-0.5 rounded bg-navy-900 text-gold-400 border border-gold-500/40 leading-none">EVICTKING</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-semibold tracking-wide mt-1 leading-none">香港專業追租・法定收樓顧問</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden xl:flex items-center gap-3.5 2xl:gap-5 text-[13px] font-bold text-slate-700 whitespace-nowrap shrink-0">
+        <a href="#market-data" class="hover:text-navy-900 transition py-1">法庭數據</a>
+        <a href="#pain-points" class="hover:text-navy-900 transition py-1">物業痛點</a>
+        <a href="#calculator" class="hover:text-navy-900 transition py-1">止蝕試算</a>
+        <a href="#comparison" class="hover:text-navy-900 transition py-1">自辦vs代辦</a>
+        <a href="#process" class="hover:text-navy-900 transition py-1">5大步驟</a>
+        <a href="#cases" class="hover:text-navy-900 transition py-1">實戰案例</a>
+        <a href="#post-eviction" class="hover:text-navy-900 transition py-1">翻新放盤</a>
+        <a href="#pricing" class="hover:text-navy-900 transition py-1">分段收費</a>
+        <a href="#knowledge-hub" class="text-amber-700 hover:text-navy-900 transition py-1 flex items-center gap-1"><i class="fa-solid fa-book-open text-xs"></i>急救專欄</a>
+      </nav>
+
+      <!-- Desktop CTA Buttons -->
+      <div class="hidden md:flex items-center gap-2.5 shrink-0 whitespace-nowrap">
+        <a href="#assessment" class="whitespace-nowrap px-3.5 py-2.5 rounded-xl text-xs lg:text-sm font-bold text-navy-900 bg-slate-100 hover:bg-slate-200 transition">
+          免費評估表單
+        </a>
+        <a href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【收樓王 EvictKing】免費初步個案評估" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link whitespace-nowrap inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition">
+          <i class="fa-brands fa-whatsapp text-base lg:text-lg"></i>
+          <span>WhatsApp 即時諮詢</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="xl:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none shrink-0" aria-label="開啟選單">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+      <a href="#market-data" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">📊 法庭數據洞察</a>
+      <a href="#pain-points" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🏠 5大物業類型專屬方案</a>
+      <a href="#calculator" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🧮 智能收樓止蝕試算 2.0</a>
+      <a href="#comparison" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">⚖️ 自辦延誤 (6-9個月) vs 專業代辦</a>
+      <a href="#process" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🛡️ 5大保密收樓步驟</a>
+      <a href="#cases" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">📂 實戰成功案例庫</a>
+      <a href="#post-eviction" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🔨 收樓後翻新・清潔・放盤一條龍</a>
+      <a href="#pricing" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">💎 透明分段收費</a>
+      <a href="#knowledge-hub" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-bold text-amber-700 bg-amber-50/70 hover:bg-amber-100/70">📚 業主收樓急救專欄 (5大攻略)</a>
+      <a href="#faq" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">❓ 業主常見問題</a>
+      <div class="pt-2">
+        <a href="#assessment" class="mobile-link block w-full text-center py-3 rounded-xl font-bold bg-navy-900 text-gold-400">
+          填寫 30 秒個案評估表
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="top" class="hero-bg text-white py-16 sm:py-24 lg:py-28 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-gold-500/15 border border-gold-400/40 text-gold-300 text-xs sm:text-sm font-semibold">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span>累計協助超過 300+ 名香港業主成功收樓・嚴格預審杜絕退件延誤</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-[50px] font-black leading-[1.18] tracking-tight">
+            租霸欠租失蹤？<br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200">
+              較業主自辦平均快 2–4 個月*
+            </span><br />
+            合法破門・極速止蝕
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl font-normal">
+            地產市場數據顯示，業主自行摸索跑程序常因文件微瑕遭退件，往往拖長至 <strong>6 至 9 個月</strong> 才能收樓！我們專為香港業主代辦全套法定追租及收樓程序，事前嚴格核對關鍵文件，<strong>分段明碼實價，全程無需業主親自奔波。</strong>
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-3 pt-2">
+            <div class="flex items-center gap-2.5 bg-white/5 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-white/10">
+              <i class="fa-solid fa-circle-check text-gold-400"></i>
+              <span class="text-xs sm:text-sm font-medium text-slate-100">100% 遵循香港法定程序</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white/5 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-white/10">
+              <i class="fa-solid fa-circle-check text-gold-400"></i>
+              <span class="text-xs sm:text-sm font-medium text-slate-100">預審文件防退件重排</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white/5 backdrop-blur-sm px-3.5 py-2.5 rounded-xl border border-white/10">
+              <i class="fa-solid fa-circle-check text-gold-400"></i>
+              <span class="text-xs sm:text-sm font-bold text-gold-300">首階段開案 $1,999 起・分段收費</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+            <a href="https://wa.me/85244962400" data-wa-text="你好，我有租務欠租問題，想進行免費初步個案評估" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center justify-center gap-3 px-7 py-4 rounded-2xl text-base sm:text-lg font-extrabold bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 hover:brightness-105 shadow-lg shadow-gold-500/20 transition">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>免費 WhatsApp 個案評估</span>
+            </a>
+            <a href="#calculator" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl text-base font-bold text-white bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-sm transition">
+              <i class="fa-solid fa-calculator text-gold-400"></i>
+              <span>先試算我的欠租損失與時間</span>
+            </a>
+          </div>
+          <p class="text-[11px] text-slate-400/80 pt-1">
+<div class="pt-1 flex items-center gap-2 text-xs sm:text-sm font-bold text-emerald-300">
+            <i class="fa-solid fa-camera-retro text-gold-400"></i>
+            <span>懶得打字？直接 WhatsApp 影張「租約相片」過嚟，顧問免費幫您望下有冇退件陷阱！</span>
+          </div>
+          <p class="text-[11px] text-slate-400/80 pt-1">
+            *註：實際收樓時間須視乎司法機構及執法部門排期、文件齊備度及租客有否提出抗辯等因素而定，上述數據僅供一般參考。
+          </p>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-navy-900/90 backdrop-blur-md border border-gold-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-gold-400">專業代辦進度預估*</span>
+                <h2 class="text-lg sm:text-xl font-bold text-white mt-0.5">標準合規收樓時間表</h2>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                欠租滿 15 天可啟動
+              </span>
+            </div>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3.5">
+                <div class="w-7 h-7 rounded-lg bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center shrink-0 mt-0.5">1</div>
+                <div class="w-full">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-white">文件嚴格預審及正式開案</span>
+                    <span class="text-xs font-semibold text-gold-400">預計第 1–5 個工作天</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mt-0.5">核對租約、稅務與業權文件吻合度，降低退件風險。</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-7 h-7 rounded-lg bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center shrink-0 mt-0.5">2</div>
+                <div class="w-full">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-white">完成法定送達與宣誓程序</span>
+                    <span class="text-xs font-semibold text-gold-400">預計第 1–3 週</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mt-0.5">外勤專人執行法定通知程序並完成宣誓存檔。</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-7 h-7 rounded-lg bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center shrink-0 mt-0.5">3</div>
+                <div class="w-full">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-white">申請勝訴裁決及收樓指令</span>
+                    <span class="text-xs font-semibold text-gold-400">預計第 4–9 週*</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mt-0.5">部分租客於此階段收到正式警告後已主動交匙遷出。</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center shrink-0 mt-0.5">4</div>
+                <div class="w-full">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-emerald-300">執法人員陪同破門・收回單位</span>
+                    <span class="text-xs font-semibold text-emerald-400">視乎各區排期進度*</span>
+                  </div>
+                  <p class="text-slate-300 text-xs mt-0.5">預約執法部門上門，專業鎖匠現場開鎖換鎖，合法接管物業。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+              <span>*各階段時間受相關部門輪候情況影響，僅供參考</span>
+              <a href="#comparison" class="text-gold-400 font-bold hover:underline shrink-0">查看自辦延誤對比 →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MARKET DATA INSIGHTS -->
+  <section id="market-data" class="py-16 sm:py-24 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-900/5 border border-navy-900/15 text-navy-800 text-xs font-bold mb-3">
+          <i class="fa-solid fa-scale-balanced text-gold-600"></i>
+          <span>權威數據背書｜資料來源：香港司法機構年報統計</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 tracking-tight leading-tight">
+          土地審裁處租務案件激增 <span class="text-amber-600">+33%</span>，<br class="hidden sm:inline" />
+          為什麼「越遲入稟、或自辦退件」會拖足大半年？
+        </h2>
+        <p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">
+          根據香港司法機構《土地審裁處》公開年報數據，近年租賃糾紛入稟數量持續攀升，且長期處於「新入稟多於結案」的高負荷狀態。業主若自行辦理稍有差池被退件，隨時陷入漫長輪候。
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-6">
+        
+        <div class="lg:col-span-7 bento-card bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-500">土地審裁處（Lands Tribunal）</span>
+                <h3 class="text-lg sm:text-xl font-extrabold text-navy-900">歷年租賃案件（Tenancy Cases）入稟宗數趨勢</h3>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-red-100 text-red-700 border border-red-200">
+                <i class="fa-solid fa-arrow-trend-up mr-1"></i>兩年間急升 +32.9%
+              </span>
+            </div>
+
+            <div class="space-y-5 my-6">
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-bold text-slate-700 mb-1.5">
+                  <span>2022 年度入稟租賃案件</span>
+                  <span class="font-display">3,161 宗</span>
+                </div>
+                <div class="w-full h-4 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-slate-500 rounded-full" style="width: 72%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-bold text-slate-700 mb-1.5">
+                  <span>2023 年度入稟租賃案件</span>
+                  <span class="font-display">3,872 宗 <span class="text-xs text-amber-600 font-semibold">(+22.5%)</span></span>
+                </div>
+                <div class="w-full h-4 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-navy-700 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs sm:text-sm font-extrabold text-navy-900 mb-1.5">
+                  <span class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    最新年度入稟租賃案件（司法年報統計基準）
+                  </span>
+                  <span class="font-display text-amber-700">4,201 宗 <span class="text-xs bg-amber-100 px-1.5 py-0.5 rounded">(持續高企)</span></span>
+                </div>
+                <div class="w-full h-5 bg-slate-200 rounded-full overflow-hidden p-0.5">
+                  <div class="h-full bg-gradient-to-r from-navy-900 via-navy-700 to-gold-500 rounded-full" style="width: 98%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11px] text-slate-400">
+            <span>*統計數據摘錄自香港司法機構年報，僅供市場趨勢參考。</span>
+            <span class="font-semibold text-slate-500 shrink-0">官方公開統計資料</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 grid sm:grid-cols-2 lg:grid-cols-1 gap-6">
+          <div class="bento-card bg-navy-900 text-white rounded-3xl p-6 sm:p-7 border border-navy-800 shadow-lg relative overflow-hidden">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/20 text-gold-300 border border-gold-400/30">
+                案件積壓與退件風險
+              </span>
+              <i class="fa-solid fa-hourglass-half text-gold-400 text-xl"></i>
+            </div>
+            <div class="flex items-baseline gap-3 my-2">
+              <span class="text-3xl sm:text-4xl font-black text-gold-400 font-display">4,201</span>
+              <span class="text-xs text-slate-300">新入稟</span>
+              <span class="text-slate-500">vs</span>
+              <span class="text-2xl sm:text-3xl font-extrabold text-white font-display">3,488</span>
+              <span class="text-xs text-slate-300">同年結案</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mt-2">
+              法庭每年累積逾 700+ 宗待處理案件缺口。<strong>地產界數據顯示，業主自辦往往因漏填、地址微瑕或不懂銜接程序而來回補件 1–2 次，令收樓期輕易拖長至 6–9 個月！</strong>
+            </p>
+          </div>
+
+          <div class="bento-card bg-gradient-to-br from-amber-50 to-gold-100/70 rounded-3xl p-6 sm:p-7 border border-gold-400/40 shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-navy-900 text-gold-400">
+                一次合規過審優勢
+              </span>
+              <i class="fa-solid fa-gauge-high text-navy-900 text-xl"></i>
+            </div>
+            <div class="my-2">
+              <span class="text-xs font-bold text-slate-600 block">由排期至聆訊官方平均輪候基準：</span>
+              <div class="flex items-baseline gap-2 mt-1">
+                <span class="text-3xl sm:text-4xl font-black text-navy-900 font-display">約 15–18 日*</span>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">須文件齊全合規</span>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mt-2">
+              只要確保文件合規無誤、各階段限期屆滿即刻遞交，便能大幅減少無謂的空窗期與補件延誤。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PAIN POINTS & 5 PROPERTY TYPES -->
+  <section id="pain-points" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-gold-600">業主真實困境</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 mt-2">面對租霸拖租，你係咪都遇到呢 4 大難題？</h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">切勿自行斷水斷電或強行換鎖（可能觸犯非法驅逐或刑事恐嚇罪），交由專業顧問團隊合法代辦。</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
+        <div class="bento-card bg-white p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-phone-slash"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">租客失蹤・軟硬不吃</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">電話唔聽、WhatsApp 已讀不回，每次追租都諸多藉口拖延，繼續霸住單位免費居住。</p>
+        </div>
+
+        <div class="bento-card bg-white p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-file-circle-question"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">自辦易中伏・拖足大半年</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">法定文件與稅務要求極嚴，一旦地址、日期或送達程序有微瑕遭退件，隨時拖到 6 至 9 個月。</p>
+        </div>
+
+        <div class="bento-card bg-white p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-navy-800 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-scale-unbalanced"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">傳統律師樓收費難預算</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">動輒數萬元起跳且按小時或逐封信計費，費用無底洞，令已經蝕租的業主雪上加霜。</p>
+        </div>
+
+        <div class="bento-card bg-white p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-business-time"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">工作繁忙・無暇跑部門</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">需連續多日實地送達通知、辦理宣誓及多次往返不同政府部門排期，自己請假極度費神。</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-gold-600">全方位物業覆蓋</span>
+            <h3 class="text-xl sm:text-2xl font-black text-navy-900 mt-1">針對香港 5 大物業類型，破解專屬收樓難點</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500">無論係私人屋苑、偏遠村屋定係街舖工廈，我們均熟悉其特殊送達與執行要求。</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70">
+            <div class="text-navy-900 font-extrabold text-base flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-building text-gold-500"></i> 私人住宅／洋樓
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">處理住宅租約欠租、期滿不遷出及相關合規文件核對，快速啟動法定程序。</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70">
+            <div class="text-navy-900 font-extrabold text-base flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-house-chimney-window text-gold-500"></i> 新界村屋／丁屋
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">精準核對丈量約份（DD Lot）與偏遠門牌地址，防止因地址不符導致送達失敗重排。</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70">
+            <div class="text-navy-900 font-extrabold text-base flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-store text-gold-500"></i> 地舖／商場舖位
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">應對高額差餉與商場管理費倒貼風險，協調管理處配合執行合法收舖。</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70">
+            <div class="text-navy-900 font-extrabold text-base flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-briefcase text-gold-500"></i> 商業寫字樓
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">針對有限公司或空殼公司租客欠租，嚴密執行法定註冊地址與單位雙線送達。</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/70 sm:col-span-2 lg:col-span-1">
+            <div class="text-navy-900 font-extrabold text-base flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-warehouse text-gold-500"></i> 工廈／倉庫工作室
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">妥善處理收回工廈後的重型生財工具、貨存遺留物及後續法定棄置與清場程序。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. SMART CALCULATOR 2.0 -->
+  <section id="calculator" class="py-16 sm:py-24 bg-navy-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-300 text-xs font-bold mb-3">
+          <i class="fa-solid fa-calculator"></i> 智能收樓止蝕分析儀 2.0
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black tracking-tight">
+          點選您的物業類型，即時試算「自辦拖延 6–9 個月」的慘痛代價
+        </h2>
+        <p class="text-slate-300 mt-2 text-sm sm:text-base">
+          租霸霸住單位期間，業主每月除損失租金，更要白白倒貼管理費、差餉及按揭供款。立即模擬自辦延誤與專業代辦的差距：
+        </p>
+      </div>
+
+      <div class="bg-white text-slate-900 rounded-3xl p-6 sm:p-10 shadow-2xl border border-gold-400/30">
+        
+        <div class="mb-8">
+          <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-3">
+            第一步：點擊選擇涉事物業類型（自動帶入香港常見基準及注意事項）
+          </label>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3" id="propTypeGroup">
+            <button type="button" data-type="私人住宅" data-rent="18000" data-mgt="2200" data-tip="私人住宅最常因「租約簽署日期或地址寫法」與稅務文件有些微出入，或業主漏辦特定法定文件，一旦出現 1–2 次補件，自辦時間往往拉長至 6–9 個月。" class="prop-preset-btn active flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-bold text-sm border-2 border-navy-900 bg-navy-900 text-gold-400 shadow-sm transition">
+              <i class="fa-solid fa-building"></i>
+              <span>私人住宅</span>
+            </button>
+            <button type="button" data-type="新界村屋" data-rent="13500" data-mgt="800" data-tip="新界村屋常涉及 DD Lot（丈量約份地段）與實際門牌信箱位置不一，業主自辦極易因「法定送達程序不合規」被判無效重做，動輒耗時大半年以上。" class="prop-preset-btn flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-bold text-sm border-2 border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 transition">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>新界村屋</span>
+            </button>
+            <button type="button" data-type="地舖／商場舖" data-rent="45000" data-mgt="5500" data-tip="商舖每月管理費及差餉極高，每多拖延一個月動輒蝕逾 5 萬！自辦若因文件瑕疵延誤 3–4 個月，額外損失可達數十萬元。" class="prop-preset-btn flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-bold text-sm border-2 border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 transition">
+              <i class="fa-solid fa-store"></i>
+              <span>地舖／商場舖</span>
+            </button>
+            <button type="button" data-type="寫字樓／工廈" data-rent="22000" data-mgt="3000" data-tip="工商物業租客多為有限公司，除單位現場送達外，亦需嚴格處理法定註冊地址程序及收樓後的生財工具棄置申請。" class="prop-preset-btn flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-bold text-sm border-2 border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 transition">
+              <i class="fa-solid fa-warehouse"></i>
+              <span>寫字樓／工廈</span>
+            </button>
+          </div>
+
+          <div class="mt-3 p-3.5 rounded-xl bg-amber-50 border border-amber-200/80 flex items-start gap-2.5 text-xs sm:text-sm text-amber-900">
+            <i class="fa-solid fa-lightbulb text-amber-600 mt-0.5 shrink-0"></i>
+            <p id="propTipText"><strong>專家提示：</strong>私人住宅最常因「租約簽署日期或地址寫法」與稅務文件有些微出入，或業主漏辦特定法定文件，一旦出現 1–2 次補件，自辦時間往往拉長至 6–9 個月。</p>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          
+          <div class="lg:col-span-7 space-y-7">
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200/80">
+              <div class="flex justify-between items-baseline mb-3">
+                <label for="rentInput" class="text-sm sm:text-base font-extrabold text-navy-900">
+                  1. 物業每月租金 (HK$)
+                </label>
+                <span id="rentValueDisplay" class="text-2xl sm:text-3xl font-black text-navy-900 font-display">HK$ 18,000</span>
+              </div>
+              <input id="rentInput" type="range" min="5000" max="120000" step="1000" value="18000" />
+              <div class="flex justify-between text-[11px] font-semibold text-slate-400 mt-2">
+                <span>HK$ 5,000</span>
+                <span>HK$ 30,000</span>
+                <span>HK$ 60,000</span>
+                <span>HK$ 120,000</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200/80">
+              <div class="flex justify-between items-baseline mb-3">
+                <label for="monthsInput" class="text-sm sm:text-base font-extrabold text-navy-900">
+                  2. 租客目前已拖欠月數
+                </label>
+                <span id="monthsValueDisplay" class="text-2xl sm:text-3xl font-black text-red-600 font-display">2 個月</span>
+              </div>
+              <input id="monthsInput" type="range" min="1" max="12" step="1" value="2" />
+              <div class="flex justify-between text-[11px] font-semibold text-slate-400 mt-2">
+                <span>1 個月（滿15日可啟動）</span>
+                <span>4 個月</span>
+                <span>8 個月</span>
+                <span>12 個月</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200/80">
+              <div class="flex justify-between items-baseline mb-3">
+                <div>
+                  <label for="mgtInput" class="text-sm sm:text-base font-extrabold text-navy-900">
+                    3. 每月倒貼管理費及差餉 (HK$)
+                  </label>
+                  <span class="block text-xs text-slate-500">租客欠租期間，業主仍須自行墊支的物業開支</span>
+                </div>
+                <span id="mgtValueDisplay" class="text-xl sm:text-2xl font-black text-slate-700 font-display">HK$ 2,200</span>
+              </div>
+              <input id="mgtInput" type="range" min="0" max="15000" step="200" value="2200" />
+              <div class="flex justify-between text-[11px] font-semibold text-slate-400 mt-2">
+                <span>HK$ 0</span>
+                <span>HK$ 3,000</span>
+                <span>HK$ 8,000</span>
+                <span>HK$ 15,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-navy-950 text-white rounded-3xl p-6 sm:p-8 border border-gold-500/40 shadow-xl space-y-5">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-gold-400">即時損失與止蝕估算報告*</span>
+              <span id="selectedPropBadge" class="px-2.5 py-0.5 rounded text-xs font-bold bg-white/10 text-white">私人住宅</span>
+            </div>
+
+            <div>
+              <span class="text-xs text-slate-400 block">目前已累積損失（欠租＋已倒貼管理費差餉）：</span>
+              <div id="currentLossDisplay" class="text-3xl sm:text-4xl font-black text-white font-display mt-1">
+                HK$ 40,400
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-red-950/60 border border-red-500/30 space-y-1.5">
+              <div class="flex items-center justify-between text-xs font-bold text-red-300">
+                <span>⚠️ 若業主自辦中伏（常見拖延 6–9 個月*）：</span>
+              </div>
+              <div id="diyExtraLossDisplay" class="text-xl sm:text-2xl font-black text-red-400 font-display">
+                額外多蝕約 + HK$ 70,700
+              </div>
+              <p class="text-[11px] text-red-200/80">
+                按地產界常見自辦延誤中位數（約7.5個月）估算，完成收樓時累積總損失可高達 <strong id="diyTotalLossDisplay" class="underline">HK$ 191,900</strong>
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/30 space-y-1">
+              <span class="text-xs font-bold text-emerald-300 block">✅ 委託【收樓王】專業預審代辦：</span>
+              <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                杜絕人為退件與交表空窗期，預計較自辦平均縮短 <strong>2.5–3.5 個月*</strong>，潛在幫您減少約 <strong id="savedAmountDisplay" class="text-gold-400 text-base">HK$ 70,700</strong> 的額外呆帳及雜費損失！
+              </p>
+            </div>
+
+            <a id="calcWhatsappBtn" href="https://wa.me/85244962400" target="_blank" rel="noopener" class="wa-track-btn w-full py-4 px-5 rounded-2xl font-extrabold text-base bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 hover:brightness-105 flex items-center justify-center gap-2 shadow-lg transition">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>傳送此試算結果・獲取免費止蝕方案</span>
+            </a>
+
+            <p class="text-[10px] text-slate-500 leading-normal pt-1">
+              *免責提示：本試算器之時間及金額按市場常見自辦延誤情況（6–9個月）與標準程序模型推算，僅供一般參考，實際收樓時間須視乎法庭及相關部門排期與個案實際情況而定，不構成任何時間保證。
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. DIY (6-9 MONTHS) VS EVICTKING + REDACTED CASE PROOF -->
+  <section id="comparison" class="py-16 sm:py-24 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold mb-3">
+          <i class="fa-solid fa-triangle-exclamation"></i> 地產界數據與真實退件紀錄對比
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 tracking-tight">
+          為什麼業主自己跑程序，<br />
+          <span class="text-red-600">往往要拖到 6 至 9 個月先收到樓？</span>
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          綜合前線地產代理數據與本團隊實戰紀錄，業主自辦時只要遇到 1 至 2 次文件瑕疵（例如租約與稅務地址微差、漏辦特定通知書、或錯過部門交表限期），每次來回書信及重新排期就會白白浪費 1.5 至 2 個月！
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 mb-12">
+        <!-- Left: DIY 6-9 Months -->
+        <div class="rounded-3xl bg-slate-50 border-2 border-red-200 p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 pb-4 border-b border-slate-200">
+              <div>
+                <span class="text-xs font-bold text-red-600 uppercase">❌ 業主自行摸索辦理（常見情況）</span>
+                <h3 class="text-xl font-black text-navy-900 mt-0.5">出現 1–2 次退件補救及交表延誤</h3>
+              </div>
+              <span class="px-3.5 py-1.5 rounded-xl text-sm font-black bg-red-100 text-red-700 shrink-0">
+                普遍耗時 6–9 個月*
+              </span>
+            </div>
+
+            <div class="my-6">
+              <div class="flex text-[11px] font-bold text-slate-600 mb-1.5 justify-between">
+                <span>摸索開案</span>
+                <span class="text-red-600 font-extrabold">⚠️ 第1次卡關：地址/稅務補件 (+45日)</span>
+                <span class="text-red-700 font-extrabold">⚠️ 第2次卡關：程序/排期延誤 (+60日)</span>
+              </div>
+              <div class="w-full h-5 bg-slate-200 rounded-full overflow-hidden flex">
+                <div class="bg-slate-400 h-full" style="width: 20%"></div>
+                <div class="bg-red-500 h-full animate-pulse" style="width: 35%"></div>
+                <div class="bg-red-700 h-full" style="width: 30%"></div>
+                <div class="bg-slate-600 h-full" style="width: 15%"></div>
+              </div>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                <span><strong>常見卡關一（文件及稅務微瑕）：</strong>未察覺租約簽署日期與印花稅地址細節不符，遭發信要求解釋及向稅局申請更改，單此一項已白白拖延約 44–60 天。</span>
+              </li>
+              <li class="flex items-start gap-2.5 bg-red-50 p-3 rounded-xl border border-red-200/80 text-red-900">
+                <i class="fa-solid fa-triangle-exclamation text-red-600 mt-1"></i>
+                <span><strong>常見卡關二（送達不合規與交表空窗期）：</strong>不清楚連續送達與宣誓的嚴格字眼要求被判無效重貼；或收到批文後因工作繁忙隔兩三週才去交下一步表格。</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                <span><strong>常見卡關三（後續執行與棄置混亂）：</strong>不熟悉跨部門預約執法人員及收樓後的法定棄置程序，結果單位收回後仍被租霸遺留物霸佔多月無法放租。</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-red-700">
+            <span>慘痛代價：多蝕數月至大半年租金＋管理費＋精神折磨</span>
+            <span>地產市場常見自辦數據*</span>
+          </div>
+        </div>
+
+        <!-- Right: EvictKing Fast-Track -->
+        <div class="rounded-3xl bg-navy-900 text-white border-2 border-gold-500 p-6 sm:p-8 shadow-xl flex flex-col justify-between relative">
+          <div>
+            <div class="flex items-center justify-between gap-2 pb-4 border-b border-white/10">
+              <div>
+                <span class="text-xs font-bold text-gold-400 uppercase">✅ 收樓王 EvictKing 專業代辦</span>
+                <h3 class="text-xl font-black text-white mt-0.5">事前嚴格預審・無縫銜接每個法定限期</h3>
+              </div>
+              <span class="px-3.5 py-1.5 rounded-xl text-sm font-black bg-gold-500 text-navy-950 shrink-0">
+                較自辦快約 2–4 個月*
+              </span>
+            </div>
+
+            <div class="my-6">
+              <div class="flex text-[11px] font-bold text-gold-300 mb-1.5 justify-between">
+                <span>極速預審開案</span>
+                <span>0 人為退件直批</span>
+                <span class="text-emerald-400">緊貼部門排期・收回翻新重租！</span>
+              </div>
+              <div class="w-full h-5 bg-white/10 rounded-full overflow-hidden flex">
+                <div class="bg-gradient-to-r from-gold-500 to-emerald-400 h-full rounded-full" style="width: 55%"></div>
+              </div>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-200">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
+                <span><strong>開案前夕（防錯核心）：</strong>專家預先審閱租約、稅務文件及業權紀錄，如有微瑕於開案前預先處理，極大化降低法庭退件風險。</span>
+              </li>
+              <li class="flex items-start gap-2.5 bg-white/5 p-3 rounded-xl border border-gold-500/30 text-gold-200">
+                <i class="fa-solid fa-bolt text-gold-400 mt-1"></i>
+                <span><strong>零空窗期緊貼跟進：</strong>法定送達期滿即時辦理宣誓；收到批文即時遞交下一階段申請並安排執法部門排期，絕不浪費業主寶貴時間。</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                <span><strong>破門、棄置、翻新放盤一條龍：</strong>收樓當日安排鎖匠破門換鎖，同步辦理遺留物棄置申請，並可無縫安排翻油清潔及重新放盤！</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-2">
+            <span class="text-xs font-bold text-emerald-400">⚡ 大幅壓縮人為延誤與交表空窗期</span>
+            <a href="#assessment" class="text-xs font-extrabold px-3.5 py-2 rounded-lg bg-gold-500 text-navy-950 hover:bg-gold-400 transition">
+              立即交由專人預審檔案 →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- REDACTED REAL CASE PROOF CARD -->
+      <div class="rounded-3xl bg-slate-900 text-white p-6 sm:p-8 border border-slate-700 shadow-lg">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 border-b border-slate-800">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-md text-xs font-extrabold bg-gold-500 text-navy-950">實戰檔案鐵證</span>
+            <h3 class="text-lg sm:text-xl font-bold text-white">真實收樓紀錄節錄（為保護客戶私隱及本司核心程序，敏感表格編號與規費已作加密遮蔽）</h3>
+          </div>
+          <span class="text-xs text-slate-400 shrink-0"><i class="fa-solid fa-lock text-gold-400 mr-1"></i>商業機密保護檔案</span>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 text-xs">
+          <div class="bg-slate-800/90 p-4 rounded-2xl border border-slate-700 space-y-2">
+            <div class="flex justify-between text-slate-400">
+              <span>階段一：開案與連續送達</span>
+              <span class="text-emerald-400 font-bold">已完成</span>
+            </div>
+            <p class="text-slate-200 leading-relaxed">
+              核對授權書、租約正本及 <span class="redacted-bar" aria-hidden="true">████████</span>，遞交申請表 <span class="redacted-bar" aria-hidden="true">█████</span>（政府規費 <span class="redacted-bar" aria-hidden="true">████</span>），專人連續上門完成法定送達並回庭宣誓（規費 <span class="redacted-bar" aria-hidden="true">████</span>）。
+            </p>
+          </div>
+
+          <div class="bg-slate-800/90 p-4 rounded-2xl border border-red-500/40 space-y-2">
+            <div class="flex justify-between text-red-400 font-bold">
+              <span>⚠️ 揭示自辦最易中伏位</span>
+              <span>真實退件警剔</span>
+            </div>
+            <p class="text-slate-200 leading-relaxed">
+              若業主自辦未預審：法庭曾因「簽約日期與印花稅地址微差」發信要求解釋及向稅局改地址（限期 <span class="redacted-bar" aria-hidden="true">████</span>），單此補救程序即白白耗費逾 44 日！
+            </p>
+          </div>
+
+          <div class="bg-slate-800/90 p-4 rounded-2xl border border-slate-700 space-y-2">
+            <div class="flex justify-between text-slate-400">
+              <span>階段三：收樓令與執法排期</span>
+              <span class="text-emerald-400 font-bold">已完成</span>
+            </div>
+            <p class="text-slate-200 leading-relaxed">
+              獲批裁決後即時遞交 <span class="redacted-bar" aria-hidden="true">███████</span>，並前往 <span class="redacted-bar" aria-hidden="true">████████</span> 繳付按金（<span class="redacted-bar" aria-hidden="true">█████</span>）安排執法人員兩次上門張貼預告通知。
+            </p>
+          </div>
+
+          <div class="bg-slate-800/90 p-4 rounded-2xl border border-gold-500/40 space-y-2">
+            <div class="flex justify-between text-gold-400 font-bold">
+              <span>階段四：破門換鎖及棄置完結</span>
+              <span>成功交吉</span>
+            </div>
+            <p class="text-slate-200 leading-relaxed">
+              執法人員第3次上門，本司安排鎖匠現場開鎖及換鎖芯，正式收回單位；其後遞交 <span class="redacted-bar" aria-hidden="true">███████</span>，約一週內獲批信件合法清場！
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- 5.5 TEAM AUTHORITY & 100% LEGAL COMPLIANCE -->
+  <section class="py-12 sm:py-16 bg-navy-950 text-white border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-br from-navy-900 via-navy-900 to-navy-800 border border-gold-500/40 p-6 sm:p-10 shadow-2xl">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 space-y-3 border-b lg:border-b-0 lg:border-r border-white/10 pb-6 lg:pb-0 lg:pr-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-extrabold">
+              <i class="fa-solid fa-shield-halved"></i> 100% 合法合規・正統法務程序顧問
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black tracking-tight leading-snug">
+              為何超過 <span class="text-gold-400 font-display">300+</span> 名香港業主<br />安心委託【收樓王】？
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              香港業主最怕遇上「收錢唔做嘢」或「採用非法滋擾手段惹禍上身」的坊間公司。我們堅持以<strong>純粹、嚴謹的香港法定程序</strong>為業主奪回物業。
+            </p>
+          </div>
+
+          <div class="lg:col-span-7 grid sm:grid-cols-3 gap-5">
+            <div class="bg-white/5 rounded-2xl p-5 border border-white/10">
+              <div class="text-2xl sm:text-3xl font-black text-gold-400 font-display mb-1">300+ 宗</div>
+              <div class="text-sm font-extrabold text-white mb-1.5">真實成功收樓實績</div>
+              <p class="text-xs text-slate-300 leading-relaxed">累計為超過 300 名私人住宅、新界村屋及工商舖業主解決租霸難題，熟悉各區排期與特殊送達細節。</p>
+            </div>
+
+            <div class="bg-white/5 rounded-2xl p-5 border border-emerald-500/30">
+              <div class="text-xl sm:text-2xl font-black text-emerald-400 mb-1"><i class="fa-solid fa-gavel mr-1.5"></i>零灰色手段</div>
+              <div class="text-sm font-extrabold text-white mb-1.5">絕不採用非法收數滋擾</div>
+              <p class="text-xs text-slate-300 leading-relaxed">100% 依循司法機構與執法部門程序，絕不採用淋紅油、貼大字報或恐嚇手段，徹底保障業主聲譽與法律安全。</p>
+            </div>
+
+            <div class="bg-white/5 rounded-2xl p-5 border border-white/10">
+              <div class="text-xl sm:text-2xl font-black text-gold-400 mb-1"><i class="fa-solid fa-users-gear mr-1.5"></i>三大專隊</div>
+              <div class="text-sm font-extrabold text-white mb-1.5">法務・外勤・工程直營</div>
+              <p class="text-xs text-slate-300 leading-relaxed">由資深租務程序顧問、全港十八區外勤送達專員及註冊裝修工程團隊組成，進度透明可查。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 5 SERVICE STEPS -->
+  <section id="process" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-gold-600">標準化高效執行</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 mt-2">收樓王 5 大專業收樓步驟</h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          我們透過嚴密預審與無縫跟進，大幅壓縮人為失誤時間，全程無需業主親自前往司法機構排隊。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-5 gap-5">
+        <div class="bento-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-gold-500 font-display">01</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-navy-900 text-gold-400">即日–第 2 天</span>
+            </div>
+            <h3 class="text-base font-extrabold text-navy-900 mb-2">免費個案評估｜極速分析與策略擬定</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">團隊即時審閱租約及欠租紀錄，嚴格核對關鍵法定文件細節；提供清晰收樓策略與透明分段報價。</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-emerald-700">✓ 預先排查退件風險</div>
+        </div>
+
+        <div class="bento-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-gold-500 font-display">02</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-navy-900 text-gold-400">預計第 1–5 天*</span>
+            </div>
+            <h3 class="text-base font-extrabold text-navy-900 mb-2">準備文件及入稟｜法定程序開案</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">備齊所有法律文件及授權，即時向相關司法機構正式入稟開案，全面鎖定業主追討權益。</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-navy-800">✓ 專人代辦開案手續</div>
+        </div>
+
+        <div class="bento-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-gold-500 font-display">03</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-navy-900 text-gold-400">預計第 1–3 週*</span>
+            </div>
+            <h3 class="text-base font-extrabold text-navy-900 mb-2">完成法定送達｜確保程序合法無瑕</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">安排專人嚴格執行法定送達程序與誓章核實，確保法律程序合規，防止對方以程序問題抗辯拖延。</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-navy-800">✓ 外勤團隊實地執行</div>
+        </div>
+
+        <div class="bento-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-gold-500 font-display">04</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-navy-900 text-gold-400">預計第 4–9 週*</span>
+            </div>
+            <h3 class="text-base font-extrabold text-navy-900 mb-2">申請勝訴判決｜獲批正式收樓指令</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">密切跟進司法進度，順利取得法庭勝訴裁決，並第一時間申請執行正式收樓指令。</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-navy-800">✓ 緊貼限期零空窗期</div>
+        </div>
+
+        <div class="bento-card bg-navy-900 text-white rounded-2xl p-6 border border-gold-500 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-gold-400 font-display">05</span>
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-gold-500 text-navy-950">視乎執法排期*</span>
+            </div>
+            <h3 class="text-base font-extrabold text-white mb-2">執法人員配合收樓｜順利接管物業</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">快速排期並配合執法人員上門執行收樓；現場安排專業人員開鎖換鎖，順利收回單位並處理遺留物棄置。</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-bold text-gold-400">🔑 合法破門收回物業</div>
+        </div>
+      </div>
+
+      <p class="text-center text-[11px] text-slate-400 mt-6">
+        *註：以上各階段預計時間為在文件齊備且無抗辯情況下之一般參考值，實際所需時間須視乎相關司法及執法部門當時之輪候及排期進度而定。
+      </p>
+
+    </div>
+  </section>
+
+<!-- 7.5 WHATSAPP SOCIAL PROOF TESTIMONIALS -->
+  <section class="py-16 sm:py-20 bg-slate-100 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold mb-3">
+          <i class="fa-brands fa-whatsapp text-sm"></i> 累計超過 300+ 名業主真實好評見證
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 tracking-tight">
+          業主真實 WhatsApp 交吉回饋
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          為保障業主私隱，頭像及個人資料已作模糊處理。每句感謝背後，都係一間成功止蝕收回嘅單位：
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6">
+        
+        <!-- WhatsApp Card 1 -->
+        <div class="bento-card rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-[#EFEAE2] flex flex-col justify-between">
+          <div class="bg-[#075E54] text-white px-5 py-3.5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-300/30 backdrop-blur flex items-center justify-center text-xs font-bold border border-white/30">陳生</div>
+              <div>
+                <div class="text-sm font-bold flex items-center gap-1.5">陳先生（屯門私樓業主）<i class="fa-solid fa-circle-check text-emerald-300 text-xs"></i></div>
+                <div class="text-[11px] text-emerald-100">已完成破門交吉＋棄置令</div>
+              </div>
+            </div>
+            <i class="fa-brands fa-whatsapp text-xl text-emerald-200"></i>
+          </div>
+          <div class="p-5 space-y-3 text-xs sm:text-sm">
+            <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[92%]">
+              <p class="leading-relaxed">之前自己去搞咗兩個幾月都因為地址同釐印問題俾人退件，個租霸仲要寸我吹佢唔脹😓 真係好彩搵到你哋幫手預審重新跟進！</p>
+              <span class="block text-[10px] text-slate-400 text-right mt-1">11:42 AM</span>
+            </div>
+            <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[92%]">
+              <p class="leading-relaxed">今日朝早執法人員同鎖匠上門破門換埋鎖，終於正式收返間屋！尾數同翻油訂金我啱啱 FPS 過咗數俾你哋，唔該晒團隊🙏🏻</p>
+              <span class="block text-[10px] text-slate-400 text-right mt-1">02:18 PM</span>
+            </div>
+            <div class="bg-[#DCF8C6] text-slate-900 p-3 rounded-2xl rounded-tr-none shadow-sm ml-auto max-w-[85%]">
+              <p class="leading-relaxed font-medium">多謝陳生信任！棄置令一獲批我哋師傅就會即刻進場清場同翻油，一有進度再 WhatsApp 拍片俾您睇！🤝</p>
+              <span class="block text-[10px] text-emerald-700 text-right mt-1">02:20 PM ✓✓</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Card 2 -->
+        <div class="bento-card rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-[#EFEAE2] flex flex-col justify-between">
+          <div class="bg-[#075E54] text-white px-5 py-3.5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-300/30 backdrop-blur flex items-center justify-center text-xs font-bold border border-white/30">李太</div>
+              <div>
+                <div class="text-sm font-bold flex items-center gap-1.5">李太（元朗村屋業主）<i class="fa-solid fa-circle-check text-emerald-300 text-xs"></i></div>
+                <div class="text-[11px] text-emerald-100">首階段送達後租客主動交匙</div>
+              </div>
+            </div>
+            <i class="fa-brands fa-whatsapp text-xl text-emerald-200"></i>
+          </div>
+          <div class="p-5 space-y-3 text-xs sm:text-sm">
+            <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[92%]">
+              <p class="leading-relaxed">坦白講一開始我都有啲驚，驚搵著出面啲非法收數公司會搞到報警惹禍上身。見你哋全程跟足法庭規矩，每次去村屋貼通知都有晒相片同宣誓紀錄，真係好專業！</p>
+              <span class="block text-[10px] text-slate-400 text-right mt-1">昨天 04:15 PM</span>
+            </div>
+            <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[92%]">
+              <p class="leading-relaxed">個租客見你哋連貼幾日法庭通知動真格，尋晚終於肯放低條鎖匙喺信箱搬走咗！仲幫我慳返後面階段啲費用，好多謝你哋！🥳</p>
+              <span class="block text-[10px] text-slate-400 text-right mt-1">今日 10:05 AM</span>
+            </div>
+            <div class="bg-[#DCF8C6] text-slate-900 p-3 rounded-2xl rounded-tr-none shadow-sm ml-auto max-w-[85%]">
+              <p class="leading-relaxed font-medium">恭喜李太提前收回單位止蝕！記得先換過個新鎖芯最穩陣，有需要洗冷氣或執漏隨時同我哋講！✨</p>
+              <span class="block text-[10px] text-emerald-700 text-right mt-1">今日 10:12 AM ✓✓</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Card 3 -->
+        <div class="bento-card rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-[#EFEAE2] flex flex-col justify-between">
+          <div class="bg-[#075E54] text-white px-5 py-3.5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-300/30 backdrop-blur flex items-center justify-center text-xs font-bold border border-white/30">黃生</div>
+              <div>
+                <div class="text-sm font-bold flex items-center gap-1.5">黃先生（九龍地舖業主）<i class="fa-solid fa-circle-check text-emerald-300 text-xs"></i></div>
+                <div class="text-[11px] text-emerald-100">收舖＋清場還原一條龍</div>
+              </div>
+            </div>
+            <i class="fa-brands fa-whatsapp text-xl text-emerald-200"></i>
+          </div>
+          <div class="p-5 space-y-3 text-xs sm:text-sm">
+            <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[92%]">
+              <p class="leading-relaxed">間舖每個月倒貼差餉管理費加埋成五萬幾銀，自己平日返工根本行唔開去跑部門。好彩一早決定交俾收樓王搞，每個限期一到即刻入紙，快過我自己搞好多！</p>
+              <span class="block text-[10px] text-slate-400 text-right mt-1">星期二</span>
+            </div>
+            <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm max-w-[92%]">
+              <p class="leading-relaxed">連舖頭入面堆生財工具棄置同清場還原都幫我一條龍搞掂埋，今日代理已經帶緊新客睇舖，朋友有租務問題一定介紹俾你哋👍</p>
+              <span class="block text-[10px] text-slate-400 text-right mt-1">12:30 PM</span>
+            </div>
+            <div class="bg-[#DCF8C6] text-slate-900 p-3 rounded-2xl rounded-tr-none shadow-sm ml-auto max-w-[85%]">
+              <p class="leading-relaxed font-medium">多謝黃生支持！祝舖位快啲簽到個好租客，長租長有！👑</p>
+              <span class="block text-[10px] text-emerald-700 text-right mt-1">12:35 PM ✓✓</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+<!-- 引導至 Blog/案例庫的低調連結 -->
+    <div class="mt-10 text-center">
+      <a href="#knowledge-hub" class="inline-flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-navy-900 border-b border-slate-300 hover:border-navy-900 pb-0.5 transition-all">
+        想了解更詳細的各區收樓過程？點擊查看我們的實戰案例庫 👉
+      </a>
+    </div>
+    </div>
+  </section>
+  <!-- 8. ONE-STOP POST-EVICTION RENOVATION & RE-LETTING -->
+  <section id="post-eviction" class="py-16 sm:py-24 bg-navy-950 text-white border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 border border-gold-400/30 text-gold-300 text-xs font-bold mb-3">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> 收樓王獨家一條龍增值服務
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black tracking-tight">
+            破門收樓只係第一步！<br />
+            <span class="text-gold-400">我們幫您極速「清場・翻油・維修・再放盤」</span>
+          </h2>
+          <p class="text-slate-300 mt-3 text-sm sm:text-base leading-relaxed">
+            租霸遷出後，單位往往滿地垃圾、牆身污損、冷氣發臭甚至玻璃受損。業主無需再四處找師傅格價，我們提供收樓後無縫翻新還原服務，助您以最快速度重新放盤收租！
+          </p>
+        </div>
+        <div class="shrink-0">
+          <a href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【收樓＋單位翻油還原一條龍服務】" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl font-extrabold text-sm bg-gold-500 text-navy-950 hover:bg-gold-400 transition">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>查詢收樓＋翻新還原套餐</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bento-card bg-navy-900/90 p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-file-shield"></i>
+          </div>
+          <h3 class="text-base font-extrabold text-white mb-2">1. 法定棄置令與合法清場</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            收樓後即時代辦司法機構「棄置令」宣誓申請，獲批後安排清走屋內所有租霸遺留傢俬雜物，免除業主法律後顧之憂。
+          </p>
+        </div>
+
+        <div class="bento-card bg-navy-900/90 p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+          <h3 class="text-base font-extrabold text-white mb-2">2. 單位裝修翻油・牆身執漏</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            自有合作裝修師傅團隊，提供高性價比全屋剷底批灰、翻油刷新、木門修補及基本水電執漏，令殘舊單位瞬間煥然一新。
+          </p>
+        </div>
+
+        <div class="bento-card bg-navy-900/90 p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3 class="text-base font-extrabold text-white mb-2">3. 深層洗冷氣・玻璃門窗修復</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            提供專業家居深層清洗冷氣、住宅及商業玻璃裂痕修復／更換、全屋吉屋深層清潔及更換全新防盜鎖芯。
+          </p>
+        </div>
+
+        <div class="bento-card bg-navy-900/90 p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg mb-4">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <h3 class="text-base font-extrabold text-white mb-2">4. 電力重開・拍照放盤重租</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            協助辦理電力帳戶過戶／重開手續，翻新完成後拍攝高質放盤相片，助業主迅速重新放盤招租，真正轉虧為盈！
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. TRANSPARENT STAGED PRICING -->
+  <section id="pricing" class="py-16 sm:py-24 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-gold-600">明碼實價・絕無隱藏收費</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 mt-2">保證分段清晰收費</h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          我們明白業主被欠租期間的財務壓力，因此採用「按進度分段收費」。若租客在初步階段已主動交租或遷出，即無需支付後續階段代辦費用！
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-7 items-stretch">
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-7 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">免費・零責任</span>
+            <h3 class="text-xl font-extrabold text-navy-900 mt-4">WhatsApp 初步個案評估</h3>
+            <div class="my-5">
+              <span class="text-4xl font-black text-navy-900 font-display">HK$ 0</span>
+              <span class="text-xs text-slate-500 ml-1">/ 全免諮詢</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> 初步分析欠租情況與租約有效性</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> 支援以相片傳送租約進行快速檢視</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> 評估收樓流程方向與風險排查</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> 提供各階段清晰服務收費說明</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/85244962400" data-wa-text="你好，我想進行【免費 WhatsApp 初步個案評估】" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link mt-8 w-full py-3.5 rounded-xl font-bold text-sm text-center bg-navy-900 text-white hover:bg-navy-800 transition">
+            立即免費 WhatsApp 評估
+          </a>
+        </div>
+
+        <div class="rounded-3xl bg-navy-900 text-white border-2 border-gold-500 p-7 sm:p-8 shadow-2xl flex flex-col justify-between relative">
+          <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full text-xs font-extrabold bg-gold-500 text-navy-950 shadow">最受業主歡迎</div>
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-gold-500/20 text-gold-300 border border-gold-400/30">第一階段核心程序</span>
+            <h3 class="text-xl font-extrabold text-white mt-4">初步法定開案及送達程序</h3>
+            <div class="my-5">
+              <span class="text-4xl font-black text-gold-400 font-display">HK$ <span id="stage1PriceDisplay">1,999</span></span>
+              <span class="text-sm text-slate-300 font-bold">起*</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-200">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 租約、稅務及業權文件嚴格預審</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 擬備及遞交全套司法入稟申請文件</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 外勤專人連續上門執行法定送達程序</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 協助準備及辦理送達確認誓章</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 全程 WhatsApp 專人匯報進度</li>
+            </ul>
+          </div>
+          <a id="stage1WaBtn" href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【初步法定開案及送達方案】詳情" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link mt-8 w-full py-3.5 rounded-xl font-extrabold text-sm text-center bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 hover:brightness-105 transition">
+            WhatsApp 查詢此方案詳情
+          </a>
+        </div>
+
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-7 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-navy-900/10 text-navy-900">後續執行及增值階段</span>
+            <h3 class="text-xl font-extrabold text-navy-900 mt-4">裁決、收樓令及執法交吉</h3>
+            <div class="my-5">
+              <span class="text-2xl sm:text-3xl font-black text-navy-900">按階段透明報價</span>
+              <span class="block text-xs text-slate-500 mt-1">啟動前預先清楚說明，絕不中途坐地起價</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-navy-800"></i> 申請法庭勝訴裁決及正式收樓指令</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-navy-800"></i> 安排執法人員排期及上門張貼法定預告</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-navy-800"></i> 收樓當日安排專業鎖匠破門開鎖及換鎖</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-navy-800"></i> 協助申請遺留物品法定棄置令</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-navy-800"></i> 可按需加選收樓後翻油、清潔及放盤服務</li>
+            </ul>
+          </div>
+          <a href="#assessment" class="mt-8 w-full py-3.5 rounded-xl font-bold text-sm text-center border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white transition">
+            索取全套分段收費報價
+          </a>
+        </div>
+
+      </div>
+      <p class="text-center text-[11px] text-slate-400 mt-6">
+        *註：服務費用視乎物業地區、類型及個案複雜程度而定；相關政府部門之法定規費及第三方開鎖／工程費用按實際進度實報實銷，所有收費均於啟動前清楚列明。
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 9.5 NEW: LEAD MAGNET BANNER + 5 SEO/AEO KNOWLEDGE HUB ARTICLES    -->
+  <!-- 平時收合不佔空間，點開即讀，Google 與 AI 搜尋引擎 100% 完整索引！      -->
+  <!-- ================================================================= -->
+  <section id="knowledge-hub" class="py-16 sm:py-24 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Lead Magnet Banner (捕捉未滿15日或仍在猶豫的準業主名單) -->
+      <div class="rounded-3xl bg-gradient-to-r from-navy-950 via-navy-900 to-navy-800 text-white p-6 sm:p-10 border-2 border-gold-500/60 shadow-2xl mb-16 relative overflow-hidden">
+        <div class="grid lg:grid-cols-12 gap-6 items-center relative z-10">
+          <div class="lg:col-span-8 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500 text-navy-950 text-xs font-extrabold">
+              <i class="fa-solid fa-gift"></i> 業主限時免費領取（未滿 15 日亦適用）
+            </div>
+            <h2 class="text-xl sm:text-3xl font-black leading-snug">
+              租客剛開始遲交租？先領取《香港業主對付租霸 5 大法律禁忌與自救清單》懶人包！
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              好多業主一時心急做錯一步（如發錯通知或私自貼街招），結果令收樓程序推倒重來！點擊下方按鈕，我們即透過 WhatsApp 免費發送完整<strong>「防中伏自救清單＋收樓準備文件核對表」</strong>給您傍身。
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col items-stretch sm:items-end justify-center">
+            <a href="https://wa.me/85244962400" data-wa-text="你好，我想免費索取《香港業主對付租霸 5 大法律禁忌與自救清單》懶人包" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link w-full lg:w-auto text-center px-6 py-4 rounded-2xl font-extrabold text-sm sm:text-base bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 hover:brightness-105 shadow-lg transition flex items-center justify-center gap-2.5">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>WhatsApp 免費索取懶人包</span>
+            </a>
+            <span class="text-[11px] text-slate-400 mt-2 text-center lg:text-right block">⚡ 即時發送・零推銷壓力・全港業主必備</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 SEO / AEO Emergency Articles Hub -->
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-gold-600">香港業主收樓急救知識庫 (Knowledge Hub)</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-navy-900 mt-2">
+          5 大追租・收樓實戰攻略專欄
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">
+          點擊下方主題即可直接展開閱讀專家深度拆解（無需跳轉離開頁面）：
+        </p>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- Article 1 -->
+        <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
+          <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 01｜時間表與程序</span>
+                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：2 分鐘</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                【2026 香港收樓全攻略】租客欠租幾耐可以收樓？一文睇清法定時間表與自辦退件陷阱
+              </h3>
+            </div>
+            <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
+              <span>展開閱讀</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </span>
+          </button>
+          <div class="article-body hidden px-6 pb-6 pt-2 border-t border-slate-200/60 bg-white text-sm text-slate-700 space-y-3 leading-relaxed">
+            <p>
+              <strong>1. 租客欠租滿 15 日即可啟動法定程序：</strong>根據香港《業主與租客（綜合）條例》及標準租約條款，只要租客在應交租日起計拖欠滿 <strong>15 天</strong>，業主即擁有法定權利向土地審裁處申請追討欠租及收回物業管有權（俗稱「收樓」）。
+            </p>
+            <p>
+              <strong>2. 為什麼業主自辦往往拖長至 6–9 個月？</strong>收樓並非單純「交一張表」就能完結，當中涉及嚴格的稅務文件核對、連續實地送達通知、宣誓存檔、申請勝訴裁決及預約執法部門排期。地產市場數據顯示，業主自行摸索時，高達七成個案會因為「租約地址與稅務文件有微小出入」或「送達誓章字眼不合規」而遭發信要求補件解釋，每次來回動輒延誤 45 至 60 天！
+            </p>
+            <p>
+              <strong>3. 專業預審如何幫業主搶回 2–4 個月租金？</strong>收樓王團隊在開案前會為業主進行嚴格的文件預審，將所有潛在退件瑕疵於入稟前率先修正，並於每個法定限期屆滿當日即刻推進下一步程序，做到「零人為退件、零交表空窗期」。
+            </p>
+            <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+              <span class="text-xs font-bold text-amber-700">💡 租客已經欠租滿 15 日？切勿再等口頭承諾！</span>
+              <a href="https://wa.me/85244962400" data-wa-text="你好，我睇完《2026香港收樓時間表攻略》，租客目前已欠租，想進行免費初步評估" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-500 transition">
+                <i class="fa-brands fa-whatsapp"></i> 立即 WhatsApp 免費預審個案 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
+          <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 02｜漏打釐印補救</span>
+                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：2 分鐘</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                租約冇打釐印／漏交稅務文件點算？業主仲可唔可以去土地審裁處追租收樓？
+              </h3>
+            </div>
+            <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
+              <span>展開閱讀</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </span>
+          </button>
+          <div class="article-body hidden px-6 pb-6 pt-2 border-t border-slate-200/60 bg-white text-sm text-slate-700 space-y-3 leading-relaxed">
+            <p>
+              <strong>1. 破解最大迷思：「冇打釐印就永遠收唔到樓？」</strong>絕對不是！不少租霸看準業主當初為省事沒有打釐印（印花稅）或漏交相關差餉物業估價署通知書，便有恃無恐拒交租金。事實上，業主依然可以透過法定補救程序重新取得入稟資格。
+            </p>
+            <p>
+              <strong>2. 補救程序的關鍵細節：</strong>在正式入稟前，必須先按法例規定完成相關稅務及法定通知書的補辦手續。最常出事的地方在於：業主自行去補辦時，填寫的物業地址格式或簽約日期與原租約有些微差異，結果補辦完交上法庭仍然被退件！
+            </p>
+            <p>
+              <strong>3. 交由顧問一條龍同步處理：</strong>收樓王團隊熟悉各類「漏打釐印、口頭續租、租約期滿不走」的疑難個案，能協助業主快速理順前期合規文件並直通司法收樓程序。
+            </p>
+            <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+              <span class="text-xs font-bold text-amber-700">💡 唔確定手頭上的租約文件齊唔齊？</span>
+              <a href="https://wa.me/85244962400" data-wa-text="你好，我的租約文件/釐印可能未齊全，想查詢如何補救並啟動收樓程序" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-500 transition">
+                <i class="fa-brands fa-whatsapp"></i> 拍照傳送租約・免費幫您核對 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
+          <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-red-700 text-white">攻略 03｜法律紅線警剔</span>
+                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：2 分鐘</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                遇到租霸切忌斷水斷電、自行換鎖！拆解業主「私自收樓」的嚴重刑事風險
+              </h3>
+            </div>
+            <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
+              <span>展開閱讀</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </span>
+          </button>
+          <div class="article-body hidden px-6 pb-6 pt-2 border-t border-slate-200/60 bg-white text-sm text-slate-700 space-y-3 leading-relaxed">
+            <p>
+              <strong>1. 為什麼「層樓係我買，我都唔可以入屋換鎖」？</strong>在香港法例下，只要租賃關係尚未經法庭正式裁決終止及執行收樓令，物業的「管有權（Possession）」依然在租客手上。業主若私自帶鎖匠換鎖、截斷水電煤供應、甚至在門外貼大字報追租，極易觸犯《業主與租客（綜合）條例》下的<strong>「非法剝奪佔用權」或「侵擾罪」</strong>。
+            </p>
+            <p>
+              <strong>2. 隨時由「受害業主」變成「被告」：</strong>不少精明的職業租霸專門引誘業主犯錯，一旦業主私自入屋清走物品，租霸便報警聲稱屋內有數十萬名錶現金失竊，反過來向業主索償並拖延收樓！
+            </p>
+            <p>
+              <strong>3. 唯一 100% 穩陣的做法：</strong>必須經由合法司法程序取得收樓指令，再由官方執法人員（執達主任）陪同專業鎖匠上門合法破門換鎖，全過程受法律保護，租霸毫無反咬空間。
+            </p>
+            <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+              <span class="text-xs font-bold text-red-600">⚠️ 切勿私自行動！交由專業顧問合法代辦最穩陣</span>
+              <a href="https://wa.me/85244962400" data-wa-text="你好，我想了解如何100%合法啟動收樓程序，避免法律風險" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-500 transition">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp 查詢合法收樓方案 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
+          <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 04｜村屋與工商舖專題</span>
+                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：2 分鐘</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                新界村屋／商舖工廈收樓特別難？專家拆解偏遠地段送達與有限公司追討關鍵
+              </h3>
+            </div>
+            <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
+              <span>展開閱讀</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </span>
+          </button>
+          <div class="article-body hidden px-6 pb-6 pt-2 border-t border-slate-200/60 bg-white text-sm text-slate-700 space-y-3 leading-relaxed">
+            <p>
+              <strong>1. 新界村屋收樓最大陷阱（DD Lot 地址不符）：</strong>新界村屋或丁屋常使用「丈量約份（DD）及地段編號（Lot）」，但租約上往往只寫村名門牌，且信箱設於村口公眾位置。業主自辦時極易因「查冊地址與租約地址寫法不一致」或「送達位置不合規」被判無效，白白浪費數月時間。
+            </p>
+            <p>
+              <strong>2. 商舖、寫字樓及工廈（有限公司租客）：</strong>工商舖租客多以「有限公司」名義簽約，且每月差餉、管理費動輒數千至數萬元。針對有限公司欠租，除涉事單位現場送達外，更須嚴格核對公司註冊處之法定註冊地址進行雙線合規送達，確保對方無法以「未收到通知」為由推翻裁決。
+            </p>
+            <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+              <span class="text-xs font-bold text-amber-700">💡 持有村屋、地舖或工廈被欠租？我們熟悉各類特殊送達程序！</span>
+              <a href="https://wa.me/85244962400" data-wa-text="你好，我有新界村屋/工商舖物業被欠租，想查詢專屬收樓方案" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-500 transition">
+                <i class="fa-brands fa-whatsapp"></i> 查詢村屋／工商舖收樓方案 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
+          <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-emerald-700 text-white">攻略 05｜清場與翻新重租</span>
+                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：2 分鐘</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                執法人員破門收樓後，滿屋傢俬垃圾點處理？申請「棄置令」與吉屋翻油重租指南
+              </h3>
+            </div>
+            <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
+              <span>展開閱讀</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </span>
+          </button>
+          <div class="article-body hidden px-6 pb-6 pt-2 border-t border-slate-200/60 bg-white text-sm text-slate-700 space-y-3 leading-relaxed">
+            <p>
+              <strong>1. 破門收樓後，點解唔可以即刻掉走租客啲嘢？</strong>即使執法人員已將單位管有權交還業主，屋內遺留的傢俬、電器或貨物在法律上仍屬前租客財產。業主必須向司法機構遞交宣誓及申請<strong>「棄置令」</strong>，待獲批後才可合法清理或處置，徹底免除日後被追討賠償的風險。
+            </p>
+            <p>
+              <strong>2. 單位殘破不堪點樣極速重租？</strong>收樓王提供全港罕有的「收樓＋翻新＋放盤一條龍服務」：當棄置令獲批清場後，我們的裝修及清潔團隊可無縫進場，完成全屋翻油批灰、深層洗冷氣、玻璃門窗修復、電力重開及拍攝放盤靚相，助業主在最短時間內重新收租回血！
+            </p>
+            <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+              <span class="text-xs font-bold text-emerald-700">✨ 想收樓後免煩惱直接翻新再放租？</span>
+              <a href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【收樓＋申請棄置令＋翻油放盤一條龍服務】" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-500 transition">
+                <i class="fa-brands fa-whatsapp"></i> 查詢一條龍收樓翻新服務 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. COMPLETE 5-QUESTION FAQ & 4-FIELD ASSESSMENT FORM -->
+  <section id="faq" class="py-16 sm:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <div class="mb-6">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-gold-600">解答業主疑慮</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-navy-900 mt-1">業主最常問嘅問題 (FAQ)</h2>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between font-bold text-navy-900 text-base">
+              <span>1. 租客欠租幾耐可以正式開始收樓程序？</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </button>
+            <div class="faq-content px-6 pb-5 text-sm text-slate-600 leading-relaxed">
+              根據香港法例及一般租約條款，只要租客在租金到期日後<strong>拖欠滿 15 天</strong>，業主即可依法啟動追租及收回物業管有權程序。建議業主切勿輕信租霸口頭拖延，滿 15 天即可先與我們進行免費評估。
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between font-bold text-navy-900 text-base">
+              <span>2. 成個程序預計要幾耐先可以收回單位？</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed">
+              視乎租客反應及相關部門排期而定：<strong>① 若租客在收到法庭文件或首階段通知後主動交匙遷出，最快約 8–10 週左右可收回；② 若租客堅持不走，直至安排執法人員完成預告及最終破門換鎖，全程一般約需 3 至 4.5 個月左右（視乎各區排期進度及個案情況而定）。</strong>相比之下，業主自辦若因文件瑕疵退件或漏辦手續，往往會拖長至 6 至 9 個月以上。
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between font-bold text-navy-900 text-base">
+              <span>3. 如果租客收到收樓令後依然賴死唔走點算？</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed">
+              若租客在法定限期後仍拒絕遷出，我們會緊貼排期安排執法人員（執達主任）經過法定預告程序後，聯同專業鎖匠直接上門<strong>合法破門開鎖、更換新鎖芯</strong>，強制將單位管有權交還予業主。
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between font-bold text-navy-900 text-base">
+              <span>4. 收樓後屋入面留低大量垃圾或傢俬，可以點處理及翻新？</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed">
+              業主切勿自行隨意丟棄以免招惹索償風險。我們會在收樓後立即協助向司法機構申請<strong>「棄置令」</strong>，獲批後即可合法清場；我們更提供<strong>全屋翻油、洗冷氣、玻璃修復及重新放盤招租</strong>一條龍支援，幫您省卻煩惱。
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between font-bold text-navy-900 text-base">
+              <span>5. 如果個案涉及複雜法律抗辯或爭議點算？</span>
+              <i class="fa-solid fa-chevron-down text-gold-600 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed">
+              本公司提供專業租務行政事務代辦及收樓程序顧問服務，並非律師事務所。如遇極少數涉及複雜法律抗辯或訴訟爭議之個案，我們會協助轉介合作之香港執業律師跟進。
+            </div>
+          </div>
+        </div>
+
+        <div id="assessment" class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border-2 border-navy-900 shadow-xl">
+          <div class="mb-6">
+            <span class="px-2.5 py-1 rounded text-xs font-bold bg-gold-100 text-gold-600">免打字・30秒快速提交</span>
+            <h3 class="text-xl sm:text-2xl font-black text-navy-900 mt-2">免費初步個案評估表</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">勾選基本情況，系統將自動為您生成 WhatsApp 諮詢訊息：</p>
+          </div>
+
+          <form id="evictForm" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">1. 您的稱呼</label>
+              <input id="formName" type="text" placeholder="例如：陳先生 / 李太" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-navy-900 focus:outline-none" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">2. 物業類型</label>
+                <select id="formPropType" class="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-sm bg-white focus:border-navy-900 focus:outline-none">
+                  <option value="私人住宅">私人住宅</option>
+                  <option value="新界村屋">新界村屋</option>
+                  <option value="地舖/商場舖">地舖/商場舖</option>
+                  <option value="寫字樓/工廈">寫字樓/工廈</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">3. 拖欠租金時間</label>
+                <select id="formArrears" class="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-sm bg-white focus:border-navy-900 focus:outline-none">
+                  <option value="剛滿 15–30 日">剛滿 15–30 日</option>
+                  <option value="1–2 個月">1–2 個月</option>
+                  <option value="3–4 個月">3–4 個月</option>
+                  <option value="5 個月或以上">5 個月或以上</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">4. 租約及稅務文件狀況</label>
+              <select id="formDocs" class="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-sm bg-white focus:border-navy-900 focus:outline-none">
+                <option value="有租約，已齊備相關稅務文件">有租約，已齊備相關稅務文件</option>
+                <option value="有租約，但未辦妥打釐印 / CR109（可補辦）">有租約，但未辦妥打釐印 / CR109（可補辦）</option>
+                <option value="唔清楚文件齊唔齊，需專人幫手核對">唔清楚文件齊唔齊，需專人幫手核對</option>
+                <option value="租約已期滿，租客拒絕遷出">租約已期滿，租客拒絕遷出</option>
+              </select>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-2xl font-extrabold text-base bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg flex items-center justify-center gap-2 transition">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>生成 WhatsApp 訊息・獲取免費分析</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Comprehensive Protective Disclaimers -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-navy-900 flex items-center justify-center border border-gold-500/40 shrink-0">
+            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 23L3 10L10.5 15L16 6L21.5 15L29 10L27 23H5Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" fill="rgba(197, 160, 89, 0.18)"/>
+              <path d="M4 27H28" stroke="#DFB76C" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-white font-black text-lg">收樓王 EvictKing</span>
+            <p class="text-xs text-slate-500">香港業主專業追租・收樓及單位翻新顧問｜WhatsApp: <span id="footerPhoneDisplay">+852 4496 2400</span></p>
+          </div>
+        </div>
+        <div class="text-xs text-slate-500">© 2026 收樓王 EvictKing. All Rights Reserved.</div>
+      </div>
+
+      <div class="pt-6 border-t border-white/10 text-[11px] text-slate-500 leading-relaxed space-y-2">
+        <p>
+          <strong>重要免責聲明及條款說明：</strong>本網站所載之所有內容、統計數據、案例分享、試算器結果及預計收樓時間線（包括但不限於各階段天數、週數及自辦對比數據）僅供一般資訊及市場參考之用，並不構成任何形式之時間保證、結果承諾或合約條款。每宗租務及收樓個案之實際處理時間，均受制於相關司法機構（如土地審裁處）、稅務部門及執法部門（如執達主任辦事處）當時之案件輪候量、排期進度、業主提供文件之完整性，以及租客或佔用人有否提出反對、抗辯或延期申請等客觀因素影響。
+        </p>
+        <p>
+          本公司提供專業租務行政事務代辦、文件預審及收樓程序顧問服務，並非律師事務所，亦不提供正式法律意見。如個案涉及複雜法律抗辯或訴訟爭議，我們會協助轉介合作之香港執業律師跟進。
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Desktop Floating WhatsApp Widget -->
+  <div class="hidden md:block fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【收樓王 EvictKing】免費初步個案評估（可附租約相片）" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white px-5 py-3.5 rounded-full shadow-2xl border-2 border-white/20 transition-all hover:scale-105">
+      <div class="relative flex items-center justify-center">
+        <span class="absolute w-full h-full rounded-full bg-emerald-300 animate-ping opacity-60"></span>
+        <i class="fa-brands fa-whatsapp text-2xl relative z-10"></i>
+      </div>
+      <div class="text-left leading-tight">
+        <div class="text-[11px] font-semibold text-emerald-100">在線顧問・免費預審租約</div>
+        <div class="text-sm font-black">WhatsApp 即時評估</div>
+      </div>
+    </a>
+  </div>
+  <!-- Mobile Floating WhatsApp Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-navy-950/95 backdrop-blur-lg border-t border-gold-500/30 px-4 py-3 shadow-2xl">
+    <a href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【收樓王 EvictKing】免費初步個案評估" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-extrabold text-sm flex items-center justify-between shadow-lg">
+      <div class="flex items-center gap-2.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-200 animate-ping"></span>
+        <span>WhatsApp 免費評估個案（免來電滋擾）</span>
+      </div>
+      <span class="text-xs bg-black/20 px-2.5 py-1 rounded-lg">立即對話 →</span>
+    </a>
+  </div>
+
+  <!-- Interactive & Config Synchronization JavaScript -->
+  <script>
+    // 1. 讀取頂部「簡易控制台 (SITE_CONFIG)」設定
+    const CONFIG = window.SITE_CONFIG || {
+      whatsappNumber: "85244962400",
+      whatsappDisplay: "+852 4496 2400",
+      heroBackgroundUrl: "./hero.jpg",
+      ogImageUrl: "./hero.jpg",
+      stage1Price: "1,999"
+    };
+    const WHATSAPP_NUMBER = CONFIG.whatsappNumber;
+
+    // 2. 自動將簡易控制台的設定同步到全網站
+    function applySiteConfig() {
+      const heroSection = document.querySelector('.hero-bg');
+      if (heroSection && CONFIG.heroBackgroundUrl) {
+        heroSection.style.backgroundImage = `linear-gradient(108deg, rgba(7, 17, 30, 0.94) 0%, rgba(11, 25, 44, 0.88) 52%, rgba(19, 38, 66, 0.78) 100%), url('${CONFIG.heroBackgroundUrl}')`;
+      }
+      const ogMeta = document.getElementById('ogImageMeta');
+      if (ogMeta && CONFIG.ogImageUrl) {
+        ogMeta.setAttribute('content', CONFIG.ogImageUrl);
+      }
+      const priceEl = document.getElementById('stage1PriceDisplay');
+      if (priceEl && CONFIG.stage1Price) {
+        priceEl.textContent = CONFIG.stage1Price;
+      }
+      const stage1WaBtn = document.getElementById('stage1WaBtn');
+      if (stage1WaBtn && CONFIG.stage1Price) {
+        stage1WaBtn.setAttribute('data-wa-text', `你好，我想查詢【HK$${CONFIG.stage1Price}起 初步法定開案及送達方案】詳情`);
+      }
+      const footerPhoneEl = document.getElementById('footerPhoneDisplay');
+      if (footerPhoneEl && CONFIG.whatsappDisplay) {
+        footerPhoneEl.textContent = CONFIG.whatsappDisplay;
+      }
+      document.querySelectorAll('.dynamic-wa-link').forEach(link => {
+        const text = link.getAttribute('data-wa-text') || '你好，我想查詢【收樓王 EvictKing】免費初步個案評估';
+        link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+      });
+    }
+    applySiteConfig();
+
+    // 3. 手機版選單開關
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // 4. 智能收樓止蝕分析儀 2.0
+    let currentPropType = "私人住宅";
+    const rentInput = document.getElementById('rentInput');
+    const monthsInput = document.getElementById('monthsInput');
+    const mgtInput = document.getElementById('mgtInput');
+
+    const rentValueDisplay = document.getElementById('rentValueDisplay');
+    const monthsValueDisplay = document.getElementById('monthsValueDisplay');
+    const mgtValueDisplay = document.getElementById('mgtValueDisplay');
+    const currentLossDisplay = document.getElementById('currentLossDisplay');
+    const diyExtraLossDisplay = document.getElementById('diyExtraLossDisplay');
+    const diyTotalLossDisplay = document.getElementById('diyTotalLossDisplay');
+    const savedAmountDisplay = document.getElementById('savedAmountDisplay');
+    const selectedPropBadge = document.getElementById('selectedPropBadge');
+    const propTipText = document.getElementById('propTipText');
+    const calcWhatsappBtn = document.getElementById('calcWhatsappBtn');
+
+    function formatHKD(num) {
+      return "HK$ " + Math.round(num).toLocaleString('en-US');
+    }
+
+    function updateCalculator() {
+      const rent = parseInt(rentInput.value, 10);
+      const months = parseInt(monthsInput.value, 10);
+      const mgt = parseInt(mgtInput.value, 10);
+
+      const monthlyBurn = rent + mgt;
+      const currentLoss = monthlyBurn * months;
+      const extraDelayLoss = monthlyBurn * 3.5;
+      const diyTotalLoss = currentLoss + (monthlyBurn * 7.5);
+
+      rentValueDisplay.textContent = formatHKD(rent);
+      monthsValueDisplay.textContent = months + " 個月";
+      mgtValueDisplay.textContent = formatHKD(mgt);
+      selectedPropBadge.textContent = currentPropType;
+
+      currentLossDisplay.textContent = formatHKD(currentLoss);
+      diyExtraLossDisplay.textContent = "額外多蝕約 + " + formatHKD(extraDelayLoss);
+      diyTotalLossDisplay.textContent = formatHKD(diyTotalLoss);
+      savedAmountDisplay.textContent = formatHKD(extraDelayLoss);
+
+      const msg = `你好，我剛在【收樓王 EvictKing】網站進行了止蝕試算：\n` +
+                  `・物業類型：${currentPropType}\n` +
+                  `・每月租金：${formatHKD(rent)}\n` +
+                  `・每月管理費及差餉：${formatHKD(mgt)}\n` +
+                  `・目前已拖欠：${months} 個月（累積損失 ${formatHKD(currentLoss)}）\n` +
+                  `我想查詢免費初步個案評估及最快收樓方案。`;
+      calcWhatsappBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+    }
+
+    document.querySelectorAll('.prop-preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.prop-preset-btn').forEach(b => {
+          b.className = "prop-preset-btn flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-bold text-sm border-2 border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 transition";
+        });
+        btn.className = "prop-preset-btn active flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl font-bold text-sm border-2 border-navy-900 bg-navy-900 text-gold-400 shadow-sm transition";
+
+        currentPropType = btn.getAttribute('data-type');
+        rentInput.value = btn.getAttribute('data-rent');
+        mgtInput.value = btn.getAttribute('data-mgt');
+        propTipText.innerHTML = `<strong>專家提示：</strong>${btn.getAttribute('data-tip')}`;
+        updateCalculator();
+      });
+    });
+
+    [rentInput, monthsInput, mgtInput].forEach(el => {
+      el.addEventListener('input', updateCalculator);
+    });
+    updateCalculator();
+
+    // 5. FAQ 手風琴開關
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('i');
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+
+    // 5.5 急救專欄文章 (Knowledge Hub) 點擊展開閱讀開關
+    document.querySelectorAll('.article-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const icon = btn.querySelector('i.fa-chevron-down');
+        const label = btn.querySelector('span > span');
+        const isHidden = body.classList.contains('hidden');
+        body.classList.toggle('hidden');
+        if (icon) icon.classList.toggle('rotate-180');
+        if (label) label.textContent = isHidden ? '收合文章' : '展開閱讀';
+      });
+    });
+
+    // 6. 廣告轉換追蹤 (GA4 & Meta Pixel)
+    function trackLeadEvent(sourceLabel) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', { event_category: 'WhatsApp', event_label: sourceLabel });
+      }
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', { content_name: sourceLabel });
+      }
+    }
+
+    document.querySelectorAll('.wa-track-btn').forEach(btn => {
+      btn.addEventListener('click', () => trackLeadEvent('WhatsApp_Button_Click'));
+    });
+
+    // 7. 30秒評估表單提交跳轉 WhatsApp
+    document.getElementById('evictForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      trackLeadEvent('Assessment_Form_Submit');
+      const name = document.getElementById('formName').value.trim() || "業主";
+      const prop = document.getElementById('formPropType').value;
+      const arrears = document.getElementById('formArrears').value;
+      const docs = document.getElementById('formDocs').value;
+
+      const text = `你好，我是${name}，想預約【收樓王 EvictKing】免費初步個案評估：\n` +
+                   `1. 物業類型：${prop}\n` +
+                   `2. 拖欠租金時間：${arrears}\n` +
+                   `3. 文件狀況：${docs}\n` +
+                   `請提供專業收樓流程建議及分段報價。`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    });
+  </script>
+</body>
+</html>
