@@ -165,9 +165,9 @@
                 </a>
               </li>
               <li>
-                <a href="${prefix}#knowledge-hub" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="blog-commercial-eviction.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">03.</span>
-                  <span>租霸欠租失聯點算？3步合法向土地審裁處申請收樓</span>
+                  <span>地舖租客失聯兼欠租？拆解「有限公司」收舖 雙線送達秘訣（止蝕15萬）</span>
                 </a>
               </li>
               <li>
