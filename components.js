@@ -159,15 +159,15 @@
                 </a>
               </li>
               <li>
-                <a href="${prefix}#knowledge-hub" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="blog-unstamped-tenancy.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">02.</span>
-                  <span>租霸欠租失聯點算？3步合法向土地審裁處申請收樓</span>
+                  <span>租約無打釐印、漏交 CR109 就不能追租？一招拆解法庭退件危機</span>
                 </a>
               </li>
               <li>
                 <a href="${prefix}#knowledge-hub" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">03.</span>
-                  <span>沒打釐印（印花稅）能不能告租霸？補打程序與罰款實測</span>
+                  <span>租霸欠租失聯點算？3步合法向土地審裁處申請收樓</span>
                 </a>
               </li>
               <li>
