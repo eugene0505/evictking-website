@@ -209,15 +209,15 @@
   </footer>
   `;
 
-  // 渲染至對應的容器
+  // 關鍵修正：使用 outerHTML 直接替換佔位標籤，讓 <header class="sticky top-0"> 直接成為 <body> 子元素，100% 恢復跟隨向下滑動！
   const headerContainer = document.getElementById('site-header');
   if (headerContainer) {
-    headerContainer.innerHTML = HEADER_HTML;
+    headerContainer.outerHTML = HEADER_HTML;
   }
 
   const footerContainer = document.getElementById('site-footer');
   if (footerContainer) {
-    footerContainer.innerHTML = FOOTER_HTML;
+    footerContainer.outerHTML = FOOTER_HTML;
   }
 
   // 若在 Blog 內頁（沒有首頁專屬的底層 Script），自動綁定手機版漢堡選單與 WhatsApp 連結
