@@ -177,7 +177,7 @@
                 </a>
               </li>
               <li class="sm:col-span-2">
-                <a href="${prefix}#knowledge-hub" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="blog-post-eviction.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">05.</span>
                   <span>執達吏破門收樓後，租客留下一屋垃圾及欠款可以點處理？</span>
                 </a>
