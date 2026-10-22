@@ -161,19 +161,19 @@
               <li>
                 <a href="blog-unstamped-tenancy.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">02.</span>
-                  <span>租約無打釐印、漏交 CR109 就不能追租？一招拆解法庭退件危機</span>
+                  <span>租約無打釐印、漏交 CR109 就不能追租？一招拆解退件危機</span>
                 </a>
               </li>
               <li>
                 <a href="blog-commercial-eviction.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">03.</span>
-                  <span>地舖租客失聯兼欠租？拆解「有限公司」收舖 雙線送達秘訣（止蝕15萬）</span>
+                  <span>地舖租客失聯兼欠租？拆解「有限公司」收舖雙線送達秘訣</span>
                 </a>
               </li>
               <li>
-                <a href="${prefix}#knowledge-hub" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="blog-village-house.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">04.</span>
-                  <span>法庭收樓令申請時間、執達主任排期及費用全拆解</span>
+                  <span>新界村屋收樓陷阱：自己貼通知被法庭判無效？</span>
                 </a>
               </li>
               <li class="sm:col-span-2">
