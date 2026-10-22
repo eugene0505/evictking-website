@@ -6,6 +6,17 @@
   <title>遇上無賴租霸，自行斷水斷電換鎖隨時被告入獄？｜收樓王 EvictKing 實戰案例庫</title>
   <meta name="description" content="面對賴死不走的無賴租霸，業主自行換鎖或斷水斷電隨時觸犯侵擾罪甚至被反咬爆竊！收樓王透過真實長沙灣業主案例，拆解100%合法收樓程序。">
   
+  <!-- Custom SVG Crown Favicon (Browser Tab Icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B192C'/%3E%3Cpath d='M12 46h40l4-22-14 8-10-16-10 16-14-8 4 22z' fill='%23C5A059'/%3E%3Crect x='12' y='50' width='40' height='4' rx='2' fill='%23DFB76C'/%3E%3C/svg%3E" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <!-- 加入簡易控制台設定，確保 WhatsApp 電話與首頁同步 -->
   <script>
     window.SITE_CONFIG = {
@@ -13,14 +24,6 @@
       whatsappDisplay: "+852 4496 2400"
     };
   </script>
-
-<!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -309,6 +312,32 @@
   <!-- 自動載入 components.js 中的全站共用頁尾 -->
   <div id="site-footer"></div>
   
+  <!-- 全站懸浮 WhatsApp 按鈕 (手機版底部 + 電腦版右下角) -->
+  <!-- Mobile Floating WhatsApp Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-navy-950/95 backdrop-blur-lg border-t border-gold-500/30 px-4 py-3 shadow-2xl">
+    <a href="#" data-wa-text="你好，我正在閱讀《自行換鎖陷阱》案例，想查詢免費初步個案評估" class="dynamic-wa-link w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white font-extrabold text-sm flex items-center justify-between shadow-lg">
+      <div class="flex items-center gap-2.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-200 animate-ping"></span>
+        <span>WhatsApp 免費評估（免來電滋擾）</span>
+      </div>
+      <span class="text-xs bg-black/20 px-2.5 py-1 rounded-lg">立即對話 →</span>
+    </a>
+  </div>
+
+  <!-- Desktop Floating WhatsApp Widget -->
+  <div class="hidden md:block fixed bottom-6 right-6 z-50">
+    <a href="#" data-wa-text="你好，我正在閱讀《自行換鎖陷阱》案例，想查詢免費初步個案評估" class="dynamic-wa-link group flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white px-5 py-3.5 rounded-full shadow-2xl border-2 border-white/20 transition-all hover:scale-105">
+      <div class="relative flex items-center justify-center">
+        <span class="absolute w-full h-full rounded-full bg-emerald-300 animate-ping opacity-60"></span>
+        <i class="fa-brands fa-whatsapp text-2xl relative z-10"></i>
+      </div>
+      <div class="text-left leading-tight">
+        <div class="text-[11px] font-semibold text-emerald-100">在線顧問・免費預審個案</div>
+        <div class="text-sm font-black">WhatsApp 即時評估</div>
+      </div>
+    </a>
+  </div>
+
   <!-- 引入元件與功能設定 -->
   <script src="components.js"></script>
 
