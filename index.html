@@ -119,27 +119,16 @@
   }
   </script>
 
-  <!-- Google Analytics (GA4) Tracking Placeholder -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <!-- 標準網址標籤 -->
+  <link rel="canonical" href="https://evictking.com/" />
 
-  <!-- Meta Pixel Tracking Placeholder -->
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-  </script>
+  <!-- Google Tag Manager (已配置 GTM-PQMSHRVF) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PQMSHRVF');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -243,6 +232,9 @@
   </style>
 </head>
 <body class="pb-20 md:pb-0 selection:bg-gold-500 selection:text-navy-950">
+
+  <!-- Google Tag Manager (noscript) 必備備用代碼 -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQMSHRVF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- 全站共用導覽列（由 components.js 自動注入） -->
   <div id="site-header"></div>
@@ -1423,14 +1415,17 @@
         <!-- Article 1 -->
         <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
           <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
-            <div class="space-y-1.5">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-red-700 text-white">攻略 01｜法律紅線警剔</span>
-                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+            <div class="flex items-start sm:items-center gap-4 w-full">
+              <img src="illegal-door-lock-replacement.jpg" alt="業主自行換鎖風險" class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-sm border border-slate-200 shrink-0 hidden sm:block" loading="lazy">
+              <div class="space-y-1.5 w-full">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-red-700 text-white">攻略 01｜法律紅線警剔</span>
+                  <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-extrabold text-navy-900 pr-4">
+                  遇上無賴租霸，自行斷水斷電、換鎖隨時被告入獄？拆解業主「私自收樓」的嚴重刑事風險
+                </h3>
               </div>
-              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
-                遇上無賴租霸，自行斷水斷電、換鎖隨時被告入獄？拆解業主「私自收樓」的嚴重刑事風險
-              </h3>
             </div>
             <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
               <span>展開閱讀</span>
@@ -1458,14 +1453,17 @@
         <!-- Article 2 -->
         <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
           <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
-            <div class="space-y-1.5">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 02｜漏打釐印補救</span>
-                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+            <div class="flex items-start sm:items-center gap-4 w-full">
+              <img src="unstamped-tenancy-agreement-keys.jpeg" alt="租約漏打釐印補救" class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-sm border border-slate-200 shrink-0 hidden sm:block" loading="lazy">
+              <div class="space-y-1.5 w-full">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 02｜漏打釐印補救</span>
+                  <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-extrabold text-navy-900 pr-4">
+                  租約冇打釐印、漏交 CR109 就不能追租？一招拆解土地審裁處退件危機
+                </h3>
               </div>
-              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
-                租約冇打釐印、漏交 CR109 就不能追租？一招拆解土地審裁處退件危機
-              </h3>
             </div>
             <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
               <span>展開閱讀</span>
@@ -1493,14 +1491,17 @@
         <!-- Article 3 -->
         <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
           <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
-            <div class="space-y-1.5">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 03｜商舖與有限公司</span>
-                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+            <div class="flex items-start sm:items-center gap-4 w-full">
+              <img src="abandoned-shop-mail-wedged-in-gate.jpeg" alt="有限公司商舖追租" class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-sm border border-slate-200 shrink-0 hidden sm:block" loading="lazy">
+              <div class="space-y-1.5 w-full">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 03｜商舖與有限公司</span>
+                  <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-extrabold text-navy-900 pr-4">
+                  地舖租客失聯兼欠租？拆解「有限公司」收舖難題與雙線送達秘訣
+                </h3>
               </div>
-              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
-                地舖租客失聯兼欠租？拆解「有限公司」收舖難題與雙線送達秘訣
-              </h3>
             </div>
             <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
               <span>展開閱讀</span>
@@ -1528,14 +1529,17 @@
         <!-- Article 4 -->
         <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
           <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
-            <div class="space-y-1.5">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 04｜新界村屋專題</span>
-                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+            <div class="flex items-start sm:items-center gap-4 w-full">
+              <img src="hong-kong-village-communal-mailboxes.jpeg" alt="新界村屋收樓陷阱" class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-sm border border-slate-200 shrink-0 hidden sm:block" loading="lazy">
+              <div class="space-y-1.5 w-full">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-navy-900 text-gold-400">攻略 04｜新界村屋專題</span>
+                  <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-extrabold text-navy-900 pr-4">
+                  新界村屋收樓陷阱：自己入村貼通知被法庭判「送達無效」？拆解 DD Lot 定位關鍵
+                </h3>
               </div>
-              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
-                新界村屋收樓陷阱：自己入村貼通知被法庭判「送達無效」？拆解 DD Lot 定位關鍵
-              </h3>
             </div>
             <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
               <span>展開閱讀</span>
@@ -1563,14 +1567,17 @@
         <!-- Article 5 -->
         <article class="bg-slate-50 rounded-2xl border border-slate-200/90 overflow-hidden transition">
           <button type="button" class="article-toggle-btn w-full p-6 text-left flex items-start sm:items-center justify-between gap-4 hover:bg-slate-100/70 transition">
-            <div class="space-y-1.5">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-emerald-700 text-white">攻略 05｜清場與翻新重租</span>
-                <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+            <div class="flex items-start sm:items-center gap-4 w-full">
+              <img src="trashed-apartment-after-tenant-eviction.jpeg" alt="棄置令與吉屋翻新" class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-cover shadow-sm border border-slate-200 shrink-0 hidden sm:block" loading="lazy">
+              <div class="space-y-1.5 w-full">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-extrabold bg-emerald-700 text-white">攻略 05｜清場與翻新重租</span>
+                  <span class="text-xs text-slate-500 font-medium"><i class="fa-regular fa-clock mr-1"></i>閱讀時間：3 分鐘</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-extrabold text-navy-900 pr-4">
+                  執達吏收樓後滿屋垃圾點處理？申請「棄置令」與吉屋翻新放盤一條龍教學
+                </h3>
               </div>
-              <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
-                執達吏收樓後滿屋垃圾點處理？申請「棄置令」與吉屋翻新放盤一條龍教學
-              </h3>
             </div>
             <span class="px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-bold text-navy-900 shrink-0 flex items-center gap-1.5">
               <span>展開閱讀</span>
@@ -1900,8 +1907,14 @@
       });
     });
 
-    // 6. 廣告轉換追蹤 (GA4 & Meta Pixel)
+    // 6. 廣告轉換追蹤 (支援 GTM dataLayer、GA4 及 Meta Pixel)
     function trackLeadEvent(sourceLabel) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'generate_lead',
+        event_category: 'WhatsApp',
+        event_label: sourceLabel
+      });
       if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', { event_category: 'WhatsApp', event_label: sourceLabel });
       }
