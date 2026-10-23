@@ -1,4 +1,4 @@
-// 收樓王 EvictKing - 全站共用 Header 與 Footer 元件（模組化同步版）
+// 收樓王 EvictKing - 全站共用 Header、Footer 及 Cookie 橫幅元件（模組化同步版）
 // 日後若需修改導覽列順序、聯絡資料或頁尾文章連結，只需在此檔案修改一次，全站即刻同步生效！
 
 (function() {
@@ -115,7 +115,7 @@
   </header>
   `;
 
-  // 2. 12 格深藍頁尾（保留 id="footerPhoneDisplay" 連動）
+  // 2. 12 格深藍頁尾
   const FOOTER_HTML = `
   <footer class="bg-navy-950 text-slate-400 py-12 border-t border-white/10 relative z-10" id="footer">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
@@ -150,7 +150,7 @@
             </li>
             <li class="flex items-center gap-2.5">
               <span class="text-gold-400 shrink-0">✉️</span>
-              <span>客戶服務電郵：info@evictking.hk</span>
+              <span>客戶服務電郵：info@evictking.com</span>
             </li>
             <li class="flex items-center gap-2.5">
               <span class="text-gold-400 shrink-0">🕒</span>
@@ -281,4 +281,62 @@
       link.href = 'https://wa.me/' + waNum + '?text=' + encodeURIComponent(text);
     });
   }
+
+  // =========================================================================
+  // 3. Google Ads 專用 Cookie 同意橫幅 (Consent Mode 準備)
+  // =========================================================================
+  window.addEventListener('DOMContentLoaded', function() {
+    const consentStatus = localStorage.getItem('evictking_cookie_consent');
+    if (!consentStatus) {
+      const bannerHtml = `
+      <div id="cookie-banner" class="fixed bottom-0 sm:bottom-6 sm:left-6 inset-x-0 sm:inset-x-auto z-[100] sm:max-w-sm bg-navy-950/95 backdrop-blur-md border-t sm:border border-gold-500/30 sm:rounded-2xl p-4 sm:p-5 shadow-2xl transform translate-y-full transition-transform duration-500 ease-out">
+        <div class="flex items-start gap-3">
+          <i class="fa-solid fa-cookie-bite text-gold-400 text-xl mt-0.5 shrink-0"></i>
+          <div>
+            <h4 class="text-white text-sm font-bold mb-1">我們使用 Cookies</h4>
+            <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed mb-3">
+              為提升您的瀏覽體驗及協助精準的廣告投放（如 Google 及 Meta Ads），本網站使用了 Cookies 及相關追蹤技術。繼續瀏覽即表示您同意我們的私隱政策。
+            </p>
+            <div class="flex items-center gap-3">
+              <button id="accept-cookies" class="px-4 py-2 bg-gold-500 hover:bg-gold-400 text-navy-950 text-xs font-bold rounded-lg transition-colors cursor-pointer">
+                同意及繼續
+              </button>
+              <a href="privacy-policy.html" class="text-[11px] sm:text-xs font-semibold text-gold-400 hover:text-gold-300 underline underline-offset-2">
+                查看私隱政策
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      `;
+      document.body.insertAdjacentHTML('beforeend', bannerHtml);
+
+      // 延遲滑入動畫 (提升高級感)
+      setTimeout(() => {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) banner.classList.remove('translate-y-full');
+      }, 800);
+
+      // 點擊同意按鈕
+      document.getElementById('accept-cookies').addEventListener('click', function() {
+        localStorage.setItem('evictking_cookie_consent', 'accepted');
+        const banner = document.getElementById('cookie-banner');
+        banner.classList.add('translate-y-full');
+        
+        // 觸發 Google Consent Mode Update (如 GTM 內有設定)
+        if (typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+          });
+        }
+        
+        // 隱藏後移除 DOM
+        setTimeout(() => {
+          if (banner) banner.remove();
+        }, 500);
+      });
+    }
+  });
+
 })();
