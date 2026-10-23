@@ -215,8 +215,12 @@
           本公司提供專業租務行政事務代辦、文件預審及收樓程序顧問服務，並非律師事務所，亦不提供正式法律意見。如個案涉及複雜法律抗辯或訴訟爭議，我們會協助轉介合作之香港執業律師跟進。
         </p>
         <div class="pt-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-500">
-          <span>© 2026 收樓王 EvictKing. All Rights Reserved.</span>
-          <span>香港合法租務行政及收樓顧問服務</span>
+          <span>© 2026 收樓王 EvictKing. All Rights Reserved. 香港專業租務行政及收樓顧問服務</span>
+          <div class="flex items-center gap-3">
+            <a href="privacy-policy.html" class="hover:text-gold-400 transition-colors">私隱政策 (Privacy Policy)</a>
+            <span class="text-white/20">|</span>
+            <a href="terms.html" class="hover:text-gold-400 transition-colors">服務條款 (Terms of Service)</a>
+          </div>
         </div>
       </div>
 
