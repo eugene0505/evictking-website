@@ -142,7 +142,7 @@
           <ul class="space-y-2.5 text-xs text-slate-400 pt-1">
             <li class="flex items-start gap-2.5">
               <span class="text-gold-400 shrink-0 mt-0.5">📍</span>
-              <span>辦事處地址：香港中環皇后大道中 99 號中環中心 28 樓 2808 室（預約制）</span>
+              <span>辦事處地址：香港九龍旺角彌敦道 555 號九龍行 7 樓 702 室</span>
             </li>
             <li class="flex items-center gap-2.5">
               <span class="text-gold-400 shrink-0">📱</span>
