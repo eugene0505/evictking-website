@@ -1,12 +1,43 @@
-// 收樓王 EvictKing - 全站共用 Header 與 Footer 元件（與 index.html 100% 同步版）
-// 日後若需修改選單、聯絡資料或頁尾文章連結，只需在此檔案修改一次，全站即刻同步生效！
+// 收樓王 EvictKing - 全站共用 Header 與 Footer 元件（模組化同步版）
+// 日後若需修改導覽列順序、聯絡資料或頁尾文章連結，只需在此檔案修改一次，全站即刻同步生效！
 
 (function() {
   // 自動判斷目前是否在首頁 index.html，以決定錨點連結格式
   const isHomePage = Boolean(document.getElementById('calculator') || document.getElementById('evictForm'));
   const prefix = isHomePage ? '' : 'index.html';
 
-  // 1. 與原本 index.html 100% 一致的「頂部深藍信任條 ＋ 白底單行導覽列 ＋ 手機版選單」
+  // =========================================================================
+  // 🧩 導覽列順序控制台 (NAV_ITEMS)
+  // 日後如果你在 index.html 調動了區塊順序，只需將下方對應的一行「剪下、貼上」改變順序，
+  // 電腦版頂部導覽列 與 手機版下拉選單 就會 100% 自動同步更新！
+  // =========================================================================
+  const NAV_ITEMS = [
+    { id: 'calculator',    desktop: '止蝕試算',   mobile: '🧮 智能收樓止蝕試算 2.0', isHighlight: false },
+    { id: 'pain-points',   desktop: '物業痛點',   mobile: '🏠 5大物業類型專屬方案', isHighlight: false },
+    { id: 'market-data',   desktop: '法庭數據',   mobile: '📊 法庭數據洞察', isHighlight: false },
+    { id: 'comparison',    desktop: '自辦vs代辦', mobile: '⚖️ 自辦延誤 (6-9個月) vs 專業代辦', isHighlight: false },
+    { id: 'process',       desktop: '5大步驟',    mobile: '🛡️ 5大保密收樓步驟', isHighlight: false },
+    { id: 'cases',         desktop: '實戰案例',   mobile: '📂 業主見證與實戰案例庫', isHighlight: false },
+    { id: 'post-eviction', desktop: '翻新放盤',   mobile: '🔨 收樓後翻新・清潔・放盤一條龍', isHighlight: false },
+    { id: 'pricing',       desktop: '分段收費',   mobile: '💎 透明分段收費', isHighlight: false },
+    { id: 'knowledge-hub', desktop: '急救專欄',   mobile: '📚 業主收樓急救專欄 (5大攻略)', isHighlight: true }
+  ];
+
+  const desktopNavLinks = NAV_ITEMS.map(function(item) {
+    if (item.isHighlight) {
+      return '<a href="' + prefix + '#' + item.id + '" class="text-amber-700 hover:text-navy-900 transition py-1 flex items-center gap-1"><i class="fa-solid fa-book-open text-xs"></i>' + item.desktop + '</a>';
+    }
+    return '<a href="' + prefix + '#' + item.id + '" class="hover:text-navy-900 transition py-1">' + item.desktop + '</a>';
+  }).join('\n        ');
+
+  const mobileNavLinks = NAV_ITEMS.map(function(item) {
+    if (item.isHighlight) {
+      return '<a href="' + prefix + '#' + item.id + '" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-bold text-amber-700 bg-amber-50/70 hover:bg-amber-100/70">' + item.mobile + '</a>';
+    }
+    return '<a href="' + prefix + '#' + item.id + '" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">' + item.mobile + '</a>';
+  }).join('\n      ');
+
+  // 1. 頂部深藍信任條 ＋ 白底單行導覽列 ＋ 手機版選單
   const HEADER_HTML = `
   <!-- Top Trust Notification Bar -->
   <div class="bg-navy-950 text-slate-300 text-xs py-2.5 px-4 border-b border-white/10">
@@ -51,15 +82,7 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden xl:flex items-center gap-3.5 2xl:gap-5 text-[13px] font-bold text-slate-700 whitespace-nowrap shrink-0">
-        <a href="${prefix}#market-data" class="hover:text-navy-900 transition py-1">法庭數據</a>
-        <a href="${prefix}#pain-points" class="hover:text-navy-900 transition py-1">物業痛點</a>
-        <a href="${prefix}#calculator" class="hover:text-navy-900 transition py-1">止蝕試算</a>
-        <a href="${prefix}#comparison" class="hover:text-navy-900 transition py-1">自辦vs代辦</a>
-        <a href="${prefix}#process" class="hover:text-navy-900 transition py-1">5大步驟</a>
-        <a href="${prefix}#cases" class="hover:text-navy-900 transition py-1">實戰案例</a>
-        <a href="${prefix}#post-eviction" class="hover:text-navy-900 transition py-1">翻新放盤</a>
-        <a href="${prefix}#pricing" class="hover:text-navy-900 transition py-1">分段收費</a>
-        <a href="${prefix}#knowledge-hub" class="text-amber-700 hover:text-navy-900 transition py-1 flex items-center gap-1"><i class="fa-solid fa-book-open text-xs"></i>急救專欄</a>
+        ${desktopNavLinks}
       </nav>
 
       <!-- Desktop CTA Buttons -->
@@ -81,15 +104,7 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobileMenu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
-      <a href="${prefix}#market-data" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">📊 法庭數據洞察</a>
-      <a href="${prefix}#pain-points" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🏠 5大物業類型專屬方案</a>
-      <a href="${prefix}#calculator" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🧮 智能收樓止蝕試算 2.0</a>
-      <a href="${prefix}#comparison" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">⚖️ 自辦延誤 (6-9個月) vs 專業代辦</a>
-      <a href="${prefix}#process" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🛡️ 5大保密收樓步驟</a>
-      <a href="${prefix}#cases" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">📂 實戰成功案例庫</a>
-      <a href="${prefix}#post-eviction" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">🔨 收樓後翻新・清潔・放盤一條龍</a>
-      <a href="${prefix}#pricing" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">💎 透明分段收費</a>
-      <a href="${prefix}#knowledge-hub" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-bold text-amber-700 bg-amber-50/70 hover:bg-amber-100/70">📚 業主收樓急救專欄 (5大攻略)</a>
+      ${mobileNavLinks}
       <a href="${prefix}#faq" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-50">❓ 業主常見問題</a>
       <div class="pt-2">
         <a href="${prefix}#assessment" class="mobile-link block w-full text-center py-3 rounded-xl font-bold bg-navy-900 text-gold-400">
@@ -100,7 +115,7 @@
   </header>
   `;
 
-  // 2. 與你剛更新在 index.html 的 12 格深藍頁尾 100% 一致（保留 id="footerPhoneDisplay" 連動）
+  // 2. 12 格深藍頁尾（保留 id="footerPhoneDisplay" 連動）
   const FOOTER_HTML = `
   <footer class="bg-navy-950 text-slate-400 py-12 border-t border-white/10 relative z-10" id="footer">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
@@ -123,7 +138,7 @@
             </div>
           </div>
 
-          <!-- 聯絡資料列表（日後直接修改括號或文字即可，不會影響排版） -->
+          <!-- 聯絡資料列表 -->
           <ul class="space-y-2.5 text-xs text-slate-400 pt-1">
             <li class="flex items-start gap-2.5">
               <span class="text-gold-400 shrink-0 mt-0.5">📍</span>
@@ -209,7 +224,7 @@
   </footer>
   `;
 
-  // 關鍵修正：使用 outerHTML 直接替換佔位標籤，讓 <header class="sticky top-0"> 直接成為 <body> 子元素，100% 恢復跟隨向下滑動！
+  // 使用 outerHTML 直接替換佔位標籤，確保 sticky top-0 完美運作
   const headerContainer = document.getElementById('site-header');
   if (headerContainer) {
     headerContainer.outerHTML = HEADER_HTML;
@@ -220,7 +235,7 @@
     footerContainer.outerHTML = FOOTER_HTML;
   }
 
-  // 3. 自動注入缺失的 HEAD 標籤 (Favicon, FontAwesome, Google Fonts) - 永久解決方案！
+  // 自動注入缺失的 HEAD 標籤 (Favicon, FontAwesome, Google Fonts)
   const head = document.head;
   if (!document.querySelector('link[rel="icon"]')) {
     const favicon = document.createElement('link');
@@ -242,7 +257,7 @@
     head.appendChild(fonts);
   }
 
-  // 若在 Blog 內頁（沒有首頁專屬的底層 Script），自動綁定手機版漢堡選單與 WhatsApp 連結
+  // 若在 Blog 內頁，自動綁定手機版漢堡選單與 WhatsApp 連結
   if (!isHomePage) {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
