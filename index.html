@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Tag Manager (已配置 GTM-PQMSHRVF，置於 head 頂部確保最快載入) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PQMSHRVF');</script>
+  <!-- End Google Tag Manager -->
+
   <!-- ================================================================= -->
   <!-- 👑 收樓王 EVICTKING - 簡易控制台 (SITE CONFIG)                     -->
   <!-- 日後只需修改下方雙引號內的資料，儲存後全網站所有按鈕、圖片及價錢自動同步！ -->
@@ -19,8 +27,8 @@
       // 3. 首頁大背景圖網址 (讀取同資料夾內的 hero.jpg)
       heroBackgroundUrl: "./hero.jpg",
 
-      // 4. WhatsApp 分享網址時的預覽縮圖網址 (同步為 hero.jpg)
-      ogImageUrl: "./hero.jpg",
+      // 4. WhatsApp 分享網址時的預覽縮圖網址 (強制使用 https 絕對路徑，確保轉發縮圖100%顯示)
+      ogImageUrl: "https://evictking.com/hero.jpg",
 
       // 5. 第一階段「初步法定開案及送達程序」收費 (HK$)
       stage1Price: "1,999"
@@ -28,19 +36,21 @@
   </script>
   <!-- ================================================================= -->
   
-  <!-- Basic SEO -->
+  <!-- Basic SEO 三元素 -->
   <title>收樓王 EvictKing｜香港業主專業追租・法定收樓及翻新重租顧問</title>
   <meta name="description" content="租霸欠租拖延？收樓王 EvictKing 為香港業主提供專業追租、法定收樓程序代辦及收樓後翻新放盤一條龍服務。事前嚴格預審防退件，較自辦平均快2至4個月，分段透明收費。" />
   <meta name="keywords" content="香港收樓, 追租, 土地審裁處, 執達吏, 租霸, 欠租, 收樓令, 棄置令, 村屋收樓, 商舖收樓, 租約冇打釐印收樓, 租客欠租幾耐可以收樓, 收樓王, EvictKing" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://evictking.com/" />
 
   <!-- Custom SVG Crown Favicon (Browser Tab Icon) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B192C'/%3E%3Cpath d='M12 46h40l4-22-14 8-10-16-10 16-14-8 4 22z' fill='%23C5A059'/%3E%3Crect x='12' y='50' width='40' height='4' rx='2' fill='%23DFB76C'/%3E%3C/svg%3E" />
 
-  <!-- Open Graph / WhatsApp Link Preview Tags -->
+  <!-- Open Graph / WhatsApp Link Preview Tags (已改為絕對路徑) -->
   <meta property="og:title" content="收樓王 EvictKing｜香港業主專業追租・法定收樓顧問" />
   <meta property="og:description" content="租霸欠租失蹤？事前嚴格預審文件杜絕退件延誤，較業主自辦平均快 2–4 個月合法破門收樓！特設收樓後翻油、清潔、放盤一條龍服務。" />
-  <meta id="ogImageMeta" property="og:image" content="./hero.jpg" />
+  <meta property="og:url" content="https://evictking.com/" />
+  <meta id="ogImageMeta" property="og:image" content="https://evictking.com/hero.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="zh_HK" />
 
@@ -49,16 +59,24 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://evictking.com/#organization",
     "name": "收樓王 EvictKing",
     "alternateName": "EvictKing 香港專業追租收樓顧問",
     "description": "專為香港業主提供住宅、新界村屋、商舖及工廈之法定追租、收樓程序代辦、文件預審及收樓後翻新重租一條龍顧問服務。",
+    "url": "https://evictking.com",
+    "logo": "https://evictking.com/hero.jpg",
+    "image": "https://evictking.com/hero.jpg",
+    "telephone": "+852-44962400",
+    "priceRange": "HK$1,999起（按階段透明收費）",
     "areaServed": {
       "@type": "AdministrativeArea",
       "name": "Hong Kong"
     },
-    "telephone": "+852-44962400",
-    "priceRange": "HK$1,999起（按階段透明收費）",
-    "url": "https://evictking.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "HK",
+      "addressRegion": "Hong Kong"
+    },
     "knowsAbout": [
       "香港追租收樓程序",
       "土地審裁處收回管有權程序",
@@ -119,20 +137,6 @@
   }
   </script>
 
-  <!-- 標準網址標籤 -->
-  <link rel="canonical" href="https://evictking.com/" />
-
-  <!-- Google Tag Manager (已配置 GTM-PQMSHRVF) -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PQMSHRVF');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,6 +145,8 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+  <!-- Tailwind CSS & Custom Theme Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -169,13 +175,38 @@
     }
   </script>
 
+  <!-- 關鍵靜態預編譯樣式 (Critical Pre-compiled CSS)，防止首屏閃爍 (FOUC) 與版面位移 (CLS) -->
   <style>
+    :root {
+      --navy-950: #07111E;
+      --navy-900: #0B192C;
+      --navy-800: #132642;
+      --navy-700: #1B365D;
+      --gold-600: #A68038;
+      --gold-500: #C5A059;
+      --gold-400: #DFB76C;
+      --gold-300: #F0D59C;
+      --gold-100: #FBF6EB;
+    }
     body {
-      font-family: 'Noto Sans HK', sans-serif;
+      font-family: 'Noto Sans HK', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: #F8FAFC;
       color: #0F172A;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
+    .font-display {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans HK', sans-serif;
+    }
+    /* 預編譯核心背景色與文字色，確保網路慢時首屏瞬間渲染 */
+    .bg-navy-950 { background-color: var(--navy-950); }
+    .bg-navy-900 { background-color: var(--navy-900); }
+    .text-navy-950 { color: var(--navy-950); }
+    .text-navy-900 { color: var(--navy-900); }
+    .text-gold-400 { color: var(--gold-400); }
+    .text-gold-300 { color: var(--gold-300); }
+    .bg-gold-500 { background-color: var(--gold-500); }
+
     input[type="range"] {
       -webkit-appearance: none;
       appearance: none;
@@ -207,6 +238,7 @@
       transform: translateY(-4px);
     }
     .hero-bg {
+      background-color: #07111E;
       background-image: 
         linear-gradient(108deg, rgba(7, 17, 30, 0.94) 0%, rgba(11, 25, 44, 0.88) 52%, rgba(19, 38, 66, 0.78) 100%),
         url('./hero.jpg');
@@ -231,7 +263,7 @@
     }
   </style>
 </head>
-<body class="pb-20 md:pb-0 selection:bg-gold-500 selection:text-navy-950">
+<body class="pb-20 md:pb-0 overflow-x-hidden selection:bg-gold-500 selection:text-navy-950">
 
   <!-- Google Tag Manager (noscript) 必備備用代碼 -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQMSHRVF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -255,6 +287,7 @@
             <span>累計協助超過 300+ 名香港業主成功收樓・嚴格預審杜絕退件延誤</span>
           </div>
 
+          <!-- 全頁唯一 H1 主標題，鎖定核心 SEO 關鍵字權重 -->
           <h1 class="text-3xl sm:text-5xl lg:text-[50px] font-black leading-[1.18] tracking-tight">
             租霸欠租失蹤？<br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200">
@@ -1768,7 +1801,7 @@
       whatsappNumber: "85244962400",
       whatsappDisplay: "+852 4496 2400",
       heroBackgroundUrl: "./hero.jpg",
-      ogImageUrl: "./hero.jpg",
+      ogImageUrl: "https://evictking.com/hero.jpg",
       stage1Price: "1,999"
     };
     const WHATSAPP_NUMBER = CONFIG.whatsappNumber;
@@ -1907,16 +1940,16 @@
       });
     });
 
-    // 6. 廣告轉換追蹤 (支援 GTM dataLayer、GA4 及 Meta Pixel)
+    // 6. 廣告轉換追蹤 (支援 GTM dataLayer、GA4 click_whatsapp 重要事件及 Meta Pixel)
     function trackLeadEvent(sourceLabel) {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
-        event: 'generate_lead',
+        event: 'click_whatsapp',
         event_category: 'WhatsApp',
         event_label: sourceLabel
       });
       if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', { event_category: 'WhatsApp', event_label: sourceLabel });
+        gtag('event', 'click_whatsapp', { event_category: 'WhatsApp', event_label: sourceLabel });
       }
       if (typeof fbq === 'function') {
         fbq('track', 'Lead', { content_name: sourceLabel });
@@ -1927,10 +1960,11 @@
       btn.addEventListener('click', () => trackLeadEvent('WhatsApp_Button_Click'));
     });
 
-    // 7. 30秒評估表單提交跳轉 WhatsApp
+    // 7. 30秒評估表單提交跳轉 WhatsApp（雙軌觸發：dataLayer + 模擬真實 <a> 連結點擊，100% 觸發 GTM wa.me 規則）
     document.getElementById('evictForm').addEventListener('submit', (e) => {
       e.preventDefault();
       trackLeadEvent('Assessment_Form_Submit');
+
       const name = document.getElementById('formName').value.trim() || "業主";
       const prop = document.getElementById('formPropType').value;
       const arrears = document.getElementById('formArrears').value;
@@ -1941,7 +1975,17 @@
                    `2. 拖欠租金時間：${arrears}\n` +
                    `3. 文件狀況：${docs}\n` +
                    `請提供專業收樓流程建議及分段報價。`;
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+      const targetUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+      // 建立隱藏 <a> 標籤並觸發點擊，讓 GTM「僅連結：Click URL 包含 wa.me」觸發器自動捕捉，無需額外改動 GTM 設定
+      const tempLink = document.createElement('a');
+      tempLink.href = targetUrl;
+      tempLink.target = '_blank';
+      tempLink.rel = 'noopener';
+      tempLink.style.display = 'none';
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      setTimeout(() => document.body.removeChild(tempLink), 150);
     });
   </script>
 </body>
