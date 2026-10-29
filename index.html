@@ -1349,25 +1349,58 @@
         </div>
 
         <div class="rounded-3xl bg-navy-900 text-white border-2 border-gold-500 p-7 sm:p-8 shadow-2xl flex flex-col justify-between relative">
-          <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full text-xs font-extrabold bg-gold-500 text-navy-950 shadow">最受業主歡迎</div>
-          <div>
-            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-gold-500/20 text-gold-300 border border-gold-400/30">第一階段核心程序</span>
-            <h3 class="text-xl font-extrabold text-white mt-4">初步法定開案及送達程序</h3>
-            <div class="my-5">
-              <span class="text-4xl font-black text-gold-400 font-display">HK$ <span id="stage1PriceDisplay">1,999</span></span>
-              <span class="text-sm text-slate-300 font-bold">起*</span>
-            </div>
-            <ul class="space-y-3 text-sm text-slate-200">
-              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 租約、稅務及業權文件嚴格預審</li>
-              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 擬備及遞交司法入稟申請文件</li>
-              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 協助準備及辦理送達確認誓章</li>
-              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> 全程 WhatsApp 專人匯報進度</li>
-            </ul>
-          </div>
-          <a id="stage1WaBtn" href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【初步法定開案及送達方案】詳情" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link mt-8 w-full py-3.5 rounded-xl font-extrabold text-sm text-center bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 hover:brightness-105 transition">
-            WhatsApp 查詢此方案詳情
-          </a>
+  <!-- 頂部標籤 -->
+  <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full text-xs font-extrabold bg-gold-500 text-navy-950 shadow">最受業主歡迎</div>
+  
+  <div>
+    <!-- 階段小標籤 -->
+    <span class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-gold-500/20 text-gold-300 border border-gold-400/30">
+      第一階段核心程序
+    </span>
+    
+    <!-- 方案標題 -->
+    <h3 class="text-xl sm:text-2xl font-black text-white mt-4 tracking-tight">初步法定開案及送達程序</h3>
+    
+    <!-- 價格區 -->
+    <div class="my-5 flex items-baseline gap-1.5">
+      <span class="text-4xl font-black text-gold-400 font-display tracking-tight">HK$ <span id="stage1PriceDisplay">1,999</span></span>
+      <span class="text-sm text-slate-300 font-bold">起*</span>
+    </div>
+    
+    <!-- 服務列表 -->
+    <ul class="space-y-3.5 text-sm text-slate-200">
+      <li class="flex items-start gap-3">
+        <i class="fa-solid fa-check text-gold-400 mt-1 shrink-0"></i> 
+        <span class="leading-relaxed">租約、稅務及業權文件嚴格預審與漏洞排查</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <i class="fa-solid fa-check text-gold-400 mt-1 shrink-0"></i> 
+        <span class="leading-relaxed">擬備及親身遞交司法入稟申請文件</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <i class="fa-solid fa-check text-gold-400 mt-1 shrink-0"></i> 
+        <span class="leading-relaxed">全程 WhatsApp 專人匯報進度</span>
+      </li>
+      
+      <!-- 【獨家首擊】高光特效區塊 (壓軸位置) -->
+      <li class="flex items-start gap-3 mt-5 p-3.5 rounded-xl bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/30 shadow-inner">
+        <div class="w-6 h-6 rounded-full bg-gold-500/20 flex items-center justify-center shrink-0 mt-0.5">
+          <i class="fa-solid fa-bolt text-gold-400 text-xs"></i>
         </div>
+        <div>
+          <strong class="block text-gold-400 font-bold text-sm mb-1 tracking-wide">【獨家首擊】免費代發法庭蓋章最後通牒</strong>
+          <span class="block text-xs text-slate-300 leading-relaxed">以官方顧問身份向租霸發送附有法庭印章之立案證明，發動心理戰爭取免訴訟收樓</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- 行動呼籲按鈕 -->
+  <a id="stage1WaBtn" href="https://wa.me/85244962400" data-wa-text="你好，我想查詢【第一階段：法定開案及送達方案 HK$1,999】的詳情" target="_blank" rel="noopener" class="wa-track-btn dynamic-wa-link mt-8 w-full py-3.5 rounded-xl font-extrabold text-[15px] text-center bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 hover:brightness-110 hover:shadow-lg hover:shadow-gold-500/20 transition-all active:scale-95 flex justify-center items-center gap-2">
+    <i class="fa-brands fa-whatsapp text-lg"></i>
+    WhatsApp 查詢此方案詳情
+  </a>
+</div>
 
         <div class="rounded-3xl bg-slate-50 border border-slate-200 p-7 sm:p-8 flex flex-col justify-between">
           <div>
