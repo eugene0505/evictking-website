@@ -4,7 +4,7 @@
 (function() {
   // 自動判斷目前是否在首頁 index.html，以決定錨點連結格式
   const isHomePage = Boolean(document.getElementById('calculator') || document.getElementById('evictForm'));
-  const prefix = isHomePage ? '' : 'index.html';
+  const prefix = isHomePage ? '' : '/';
 
   // =========================================================================
   // 🧩 導覽列順序控制台 (NAV_ITEMS)
@@ -168,31 +168,31 @@
             </h4>
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-xs text-slate-400">
               <li>
-                <a href="blog-illegal-eviction.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="/blog-illegal-eviction" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">01.</span>
                   <span>遇上無賴租霸，自行斷水斷電換鎖隨時被告入獄？</span>
                 </a>
               </li>
               <li>
-                <a href="blog-unstamped-tenancy.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="/blog-unstamped-tenancy" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">02.</span>
                   <span>租約無打釐印、漏交 CR109 就不能追租？一招拆解退件危機</span>
                 </a>
               </li>
               <li>
-                <a href="blog-commercial-eviction.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="/blog-commercial-eviction" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">03.</span>
                   <span>地舖租客失聯兼欠租？拆解「有限公司」收舖雙線送達秘訣</span>
                 </a>
               </li>
               <li>
-                <a href="blog-village-house.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="/blog-village-house" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">04.</span>
                   <span>新界村屋收樓陷阱：自己貼通知被法庭判無效？</span>
                 </a>
               </li>
               <li class="sm:col-span-2">
-                <a href="blog-post-eviction.html" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
+                <a href="/blog-post-eviction" class="hover:text-gold-400 transition-colors flex items-start gap-1.5">
                   <span class="text-gold-400/70 shrink-0">05.</span>
                   <span>執達吏破門收樓後，租客留下一屋垃圾及欠款可以點處理？</span>
                 </a>
@@ -217,9 +217,9 @@
         <div class="pt-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-500">
           <span>© 2026 收樓王 EvictKing. All Rights Reserved. 香港專業租務行政及收樓顧問服務</span>
           <div class="flex items-center gap-3">
-            <a href="privacy-policy.html" class="hover:text-gold-400 transition-colors">私隱政策 (Privacy Policy)</a>
+            <a href="/privacy-policy" class="hover:text-gold-400 transition-colors">私隱政策 (Privacy Policy)</a>
             <span class="text-white/20">|</span>
-            <a href="terms.html" class="hover:text-gold-400 transition-colors">服務條款 (Terms of Service)</a>
+            <a href="/terms" class="hover:text-gold-400 transition-colors">服務條款 (Terms of Service)</a>
           </div>
         </div>
       </div>
@@ -301,7 +301,7 @@
               <button id="accept-cookies" class="px-4 py-2 bg-gold-500 hover:bg-gold-400 text-navy-950 text-xs font-bold rounded-lg transition-colors cursor-pointer">
                 同意及繼續
               </button>
-              <a href="privacy-policy.html" class="text-[11px] sm:text-xs font-semibold text-gold-400 hover:text-gold-300 underline underline-offset-2">
+              <a href="/privacy-policy" class="text-[11px] sm:text-xs font-semibold text-gold-400 hover:text-gold-300 underline underline-offset-2">
                 查看私隱政策
               </a>
             </div>
