@@ -2,3 +2,8 @@
 wrangler.jsonc
 .gitignore
 README.md
+package.json
+package-lock.json
+tailwind.config.js
+node_modules/
+src/
