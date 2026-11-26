@@ -1,0 +1,9 @@
+# 本地備份／未上線資產 —— 禁止推送
+node_modules/
+.DS_Store
+
+# 舊版備份與未使用素材
+舊*
+Bussiness Card*
+Logo.svg
+收樓王 故事*
