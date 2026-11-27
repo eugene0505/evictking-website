@@ -28,7 +28,7 @@
 /components.js
   Cache-Control: public, max-age=300
 
-# No Cache-Control on /* on purpose: HTML keeps the Pages default (max-age=0, must-revalidate)
+# No Cache-Control on /* on purpose: HTML keeps the Workers Static Assets default (max-age=0, must-revalidate)
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
