@@ -1,4 +1,4 @@
-# EvictKing - Cloudflare Pages headers
+# EvictKing - Cloudflare Workers Static Assets headers
 # NOTE: HSTS is intentionally NOT defined here.
 #       It is managed in the Cloudflare dashboard (Batch 2) to avoid conflict.
 
